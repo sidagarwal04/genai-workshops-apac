@@ -1,0 +1,91 @@
+# Project Information
+site_name: GenAI Stack Workshop 
+site_url: https://genai-workshop.neo4j.com
+site_author: GenAI Developers
+
+
+# Repository
+repo_name: genai-workshop
+repo_url: https://github.com/sidagarwal04/genai-workshops-apac
+edit_uri: edit/master/docs
+
+# Copyright
+copyright: 'Copyright &copy; 2023 Neo4j'
+
+# Settings
+docs_dir: 'docs'
+site_dir: 'site'
+
+# Navigation
+nav:
+  - Getting Started: index.md
+  - Prerequisites: prereq/prerequisites.md
+  - Lab 1 - Building and deploying a simple GenAI application:
+    - Overview of GenAI: lab1/overview.md
+    - Current Challenges: lab1/challenges.md
+    - Introducing GenAI Stack: lab1/genai-stack.md
+    - What problem does it solve: lab1/solution.md
+    - Getting Started: lab1/getting-started.md
+    - Best Practices: lab1/best-practices.md
+
+# Theme
+theme:
+  name: material
+  
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+
+# Customization
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/neo4j
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/neo4j
+    - icon: fontawesome/brands/github
+      link: https://github.com/neo4j
+
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde

@@ -1,0 +1,129 @@
+# Project Information
+site_name: GenAI Stack Workshop 
+site_url: https://genai-workshop.neo4j.com
+site_author: GenAI Developers
+
+# Repository
+repo_name: genai-workshop
+repo_url: https://github.com/sidagarwal04/genai-workshops-apac
+edit_uri: edit/master/docs
+
+# Navigation
+nav:
+  - Getting Started: index.md
+  - Prerequisites: prereq/prerequisites.md
+  - Lab 1: Building and deploying a simple GenAI application (30 mins)
+     - Overview of GenAI:lab1/overview.md
+     - Current Challenges:lab1/challeneges.md
+     - Introducing GenAI Stack:lab1/genai-stack.md
+     - What problem does it solve:lab1/solution.md
+     - Getting Started:lab1/getting-started.md
+     - Best Practices:lab1/best-practices.md
+
+  - Lab 2: Using Docker to containerize and deploy GenAI applications (90 mins)
+      - What is Docker 
+      - Inner-loop Developer Workflow 
+      - Docker Developer Workflow
+      - Docker Image Building and Best Practices
+      - Building Microservices using Docker Compose
+      - Compose Best Practices
+
+  - Lab 3: Using Neo4j to store and manage knowledge graphs (60 mins)
+      - Introduction to Neo4j and Knowledge Graphs
+      - Running Neo4j in a Docker container
+      - Neo4j Docker Extension
+
+
+   - Lab 4: Using LangChain to generate text, translate languages, and write different kinds of creative content (40 mins)
+     - Introduction to LLMs
+     - Introduction to RAG  (w/ KG)
+     - Why KG+Vector are better for RAG
+     - Current Challenges
+     - Getting Started
+     - Best Practices
+
+   - Lab 5: Using Ollama to train and deploy large language models (40 mins)
+     -  Current Challenges
+     - Getting Started
+     - Running Ollama in a Docker container
+     - Best Practices
+
+
+   - Lab 6: Gen-AI Stack - Let’s bring it together (100 mins)
+     - Using Docker Compose
+     - Running it on Docker Desktop
+     - Troubleshooting
+     - Upcoming Feature
+
+
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+
+# Customization
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/neo4j
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/neo4j
+    - icon: fontawesome/brands/github
+      link: https://github.com/neo4j
+
+
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: black
+    accent: black
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/neo4j.svg
+  logo: 'assets/neo4j.svg'
+
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
