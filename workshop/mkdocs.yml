@@ -28,6 +28,16 @@ nav:
     - Getting Started: lab1/getting-started.md
     - Best Practices: lab1/best-practices.md
 
+  - Lab 2 - Using Docker to containerize and deploy GenAI applications:
+    - What is Docker: lab2/what-is-docker.md
+    - Inner-loop Developer Workflow: lab2/inner-loop-developer.md
+    - Docker Developer Workflow: lab2/docker-developer-workflow.md
+    - Docker Image Building and Best Practices: lab2/image-building.md
+    - Building Microservices using Docker Compose: lab2/microservices.md
+    - Compose Best Practices: lab2/compose-best-practices.md
+
+
+
 # Theme
 theme:
   name: material

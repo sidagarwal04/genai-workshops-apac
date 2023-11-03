@@ -36,6 +36,36 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://genai-workshop.neo4j.com/lab2/compose-best-practices/</loc>
+         <lastmod>2023-11-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://genai-workshop.neo4j.com/lab2/docker-developer-workflow/</loc>
+         <lastmod>2023-11-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://genai-workshop.neo4j.com/lab2/image-building/</loc>
+         <lastmod>2023-11-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://genai-workshop.neo4j.com/lab2/inner-loop-developer/</loc>
+         <lastmod>2023-11-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://genai-workshop.neo4j.com/lab2/microservices/</loc>
+         <lastmod>2023-11-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://genai-workshop.neo4j.com/lab2/what-is-docker/</loc>
+         <lastmod>2023-11-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://genai-workshop.neo4j.com/prereq/prerequisites/</loc>
          <lastmod>2023-11-03</lastmod>
          <changefreq>daily</changefreq>
