@@ -35,6 +35,5 @@ These hands-on labs will be a combination of theory and practical exercises.
 ## Bringing up the site
 
 ``` 
- cd workshop
  mkdocs serve
 ```
