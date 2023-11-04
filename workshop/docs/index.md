@@ -6,9 +6,15 @@ Gen-AI Stack Workshops are a series of workshops designed to teach developers ho
 
 These hands-on labs will be a combination of theory and practical exercises.
 
+## GitHub Sources
+
+The source code for this workshop is available [here](https://github.com/sidagarwal04/genai-workshops-apac)
+
+
+
 ## Benefits of GenAI Stack Workshop
 
-- Learn about GenAI and why it is important
+- [Learn about GenAI and why it is important](lab1/overview/)
 - Learn how to use the GenAI Stack to build and deploy GenAI applications
 - Learn how to use Docker to containerize and deploy GenAI applications
 - Learn how to use Neo4j to store and manage knowledge graphs
@@ -17,7 +23,7 @@ These hands-on labs will be a combination of theory and practical exercises.
 - Get hands-on experience with the GenAI Stack
 - Network with other GenAI developers and trainers
 
-# Use Cases and Stories
+# Applications and Uses
 
 ## 1. Import and Embed Data From Stack Overflow via Tags
 
