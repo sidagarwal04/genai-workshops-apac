@@ -1,4 +1,4 @@
-# Welcome to GenAI Stack
+# Welcome to GenAI Stack Workshop
 
 The GenAI Stack is a pre-configured, ready-to-code, and secure environment that makes it easy for developers to build and deploy GenAI applications.
 
@@ -16,4 +16,23 @@ These hands-on labs will be a combination of theory and practical exercises.
 - Learn how to use Ollama to train and deploy large language models
 - Get hands-on experience with the GenAI Stack
 - Network with other GenAI developers and trainers
+
+# Use Cases and Stories
+
+## 1. Import and Embed Data From Stack Overflow via Tags
+
+![My Image](stackoverflow.png)
+
+## 2. Support Agent App: Query the Imported Data via a Chat Interface Using Vector + Graph Search
+
+![image](vector-graph-search.png)
+
+## 3. Generate New Questions in the Style of Highly Ranked Existing Ones
+
+![Image](ranked.png)
+
+## 4. Read local PDF and ask it questions. Fullstack Python application.
+
+![Image](pdf.png)
+
 
