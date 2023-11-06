@@ -23,7 +23,6 @@ nav:
   - Lab 1 - Building and deploying a simple GenAI application:
     - Overview of GenAI: lab1/overview.md
     - Current Challenges: lab1/challenges.md
-    - Introducing GenAI Stack: lab1/genai-stack.md
     - What problem does it solve: lab1/solution.md
     - Getting Started: lab1/getting-started.md
     - Best Practices: lab1/best-practices.md

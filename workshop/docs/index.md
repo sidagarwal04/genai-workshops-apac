@@ -10,7 +10,10 @@ These hands-on labs will be a combination of theory and practical exercises.
 
 The source code for this workshop is available [here](https://github.com/sidagarwal04/genai-workshops-apac)
 
+## Co-Authors
 
+- [Ajeet Singh Raina](https://www.linkedin.com/in/ajeetsraina/) - DevRel @[Docker](https://docker.com)
+- [Siddhant Agarwal](https://www.linkedin.com/in/sidagarwal04) - Tech Community Manager @[Neo4j](https://neo4j.com)
 
 ## Benefits of GenAI Stack Workshop
 
