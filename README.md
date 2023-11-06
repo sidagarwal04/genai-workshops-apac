@@ -1,5 +1,7 @@
 ![stars](https://img.shields.io/github/stars/sidagarwal04/genai-workshops-apac)
 ![Twitter](https://img.shields.io/twitter/follow/neo4j?style=social)
+![Discord](https://img.shields.io/discord/787399249741479977)
+
 
 
 # Welcome to GenAI Stack
