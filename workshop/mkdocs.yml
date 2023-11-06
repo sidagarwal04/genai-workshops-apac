@@ -58,7 +58,6 @@ nav:
 
   - Lab 6 - Gen-AI Stack - Let’s bring it together:
     - Using Docker Compose: lab6/using-docker-compose.md
-    - Running it on Docker Desktop: lab6/docker-desktop.md
     - Troubleshooting: lab6/troubleshooting.md
     - Upcoming Feature: lab6/upcoming-feature.md
 
