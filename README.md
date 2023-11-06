@@ -1,4 +1,10 @@
+![stars](https://img.shields.io/github/stars/sidagarwal04/genai-workshops-apac)
+![Twitter](https://img.shields.io/twitter/follow/neo4j?style=social)
+
+
 # Welcome to GenAI Stack
+
+
 
 The GenAI Stack is a pre-configured, ready-to-code, and secure environment that makes it easy for developers to build and deploy GenAI applications.
 
