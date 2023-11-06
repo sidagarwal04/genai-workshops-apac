@@ -6,6 +6,8 @@ Gen-AI Stack Workshops are a series of workshops designed to teach developers ho
 
 These hands-on labs will be a combination of theory and practical exercises.
 
+[Access the Workshop Now!](https://genai-workshops-apac.netlify.app/)
+
 ## Benefits of GenAI Stack Workshop
 
 - Learn about GenAI and why it is important
