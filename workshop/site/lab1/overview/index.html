@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview-of-genai-stack" class="md-skip">
+        <a href="#what-is-genai-stack" class="md-skip">
           Skip to content
         </a>
       
@@ -309,8 +309,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview-of-genai-stack" class="md-nav__link">
-    Overview of GenAI Stack
+  <a href="#what-is-genai-stack" class="md-nav__link">
+    What is GenAI Stack?
   </a>
   
 </li>
@@ -332,20 +332,6 @@
     <li class="md-nav__item">
       <a href="../challenges/" class="md-nav__link">
         Current Challenges
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../genai-stack/" class="md-nav__link">
-        Introducing GenAI Stack
       </a>
     </li>
   
@@ -855,20 +841,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab6/docker-desktop/" class="md-nav__link">
-        Running it on Docker Desktop
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../lab6/troubleshooting/" class="md-nav__link">
         Troubleshooting
       </a>
@@ -922,8 +894,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview-of-genai-stack" class="md-nav__link">
-    Overview of GenAI Stack
+  <a href="#what-is-genai-stack" class="md-nav__link">
+    What is GenAI Stack?
   </a>
   
 </li>
@@ -948,7 +920,15 @@
 
   <h1>Overview of GenAI</h1>
 
-<h2 id="overview-of-genai-stack">Overview of GenAI Stack<a class="headerlink" href="#overview-of-genai-stack" title="Permanent link">&para;</a></h2>
+<h2 id="what-is-genai-stack">What is GenAI Stack?<a class="headerlink" href="#what-is-genai-stack" title="Permanent link">&para;</a></h2>
+<p>The GenAI Stack is a set of Docker containers that are orchestrated by Docker Compose which includes a management tool for local LLMs (Ollama), a database for grounding (Neo4j), and GenAI apps based on LangChain. The containers provide a dev environment of a pre-built, support agent app with data import and response generation use-cases. You can experiment with importing different information in the knowledge graph and examine how the variety in underlying grounding information affects the generated responses by the LLM in the user interface.</p>
+<p>The GenAI Stack consists of:</p>
+<ul>
+<li>Application containers (the application logic in Python built with LangChain for the orchestration and Streamlit for the UI).</li>
+<li>Database container with vector index and graph search (Neo4j).</li>
+<li>LLM container Ollama (if you’re on Linux). If you’re on MacOS, install Ollama outside of Docker.</li>
+</ul>
+<p>These containers are tied together with Docker compose. Docker compose has a watch mode setup that rebuilds relevant containers any time you make a change to the application code, allowing for fast feedback loops and a good developer experience.</p>
 
 
   

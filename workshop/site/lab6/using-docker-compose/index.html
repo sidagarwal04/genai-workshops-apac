@@ -16,7 +16,7 @@
         <link rel="prev" href="../../lab5/getting-started/">
       
       
-        <link rel="next" href="../docker-desktop/">
+        <link rel="next" href="../troubleshooting/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.15">
@@ -73,6 +73,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#table-of-contents" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -288,20 +293,6 @@
     <li class="md-nav__item">
       <a href="../../lab1/challenges/" class="md-nav__link">
         Current Challenges
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab1/genai-stack/" class="md-nav__link">
-        Introducing GenAI Stack
       </a>
     </li>
   
@@ -806,24 +797,130 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Using Docker Compose
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Using Docker Compose
       </a>
       
-    </li>
-  
+        
 
-            
-          
-            
-              
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
-    <li class="md-nav__item">
-      <a href="../docker-desktop/" class="md-nav__link">
-        Running it on Docker Desktop
-      </a>
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prereq" class="md-nav__link">
+    Prereq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-install-ollama-on-mac-os" class="md-nav__link">
+    Step 1. Install Ollama on Mac OS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-create-openai-secret-api-keys" class="md-nav__link">
+    Step 2. Create OpenAI Secret API Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-sign-up-for-langchain-beta-for-api-keys" class="md-nav__link">
+    Step 3. Sign Up for LangChain Beta for API Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-clone-the-repository" class="md-nav__link">
+    Step 4. Clone the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-create-env-file" class="md-nav__link">
+    Step 5. Create .env file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-bring-up-compose-services" class="md-nav__link">
+    Step 6. Bring up Compose services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-viewing-the-services-on-docker-dashboard" class="md-nav__link">
+    Step 7. Viewing the Services on Docker Dashboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-accessing-the-app" class="md-nav__link">
+    Step 8. Accessing the app
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    Result:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-accessing-the-neo4j" class="md-nav__link">
+    Step 9. Accessing the Neo4j
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-query-the-imported-data-via-a-chat-interface-using-vector-graph-search" class="md-nav__link">
+    Step 10. Query the Imported Data via a Chat Interface Using Vector + Graph Search
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-accessing-genai-stack-pdf-bot" class="md-nav__link">
+    Step 11. Accessing GenAI Stack PDF Bot
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -881,6 +978,112 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prereq" class="md-nav__link">
+    Prereq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-install-ollama-on-mac-os" class="md-nav__link">
+    Step 1. Install Ollama on Mac OS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-create-openai-secret-api-keys" class="md-nav__link">
+    Step 2. Create OpenAI Secret API Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-sign-up-for-langchain-beta-for-api-keys" class="md-nav__link">
+    Step 3. Sign Up for LangChain Beta for API Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-clone-the-repository" class="md-nav__link">
+    Step 4. Clone the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-create-env-file" class="md-nav__link">
+    Step 5. Create .env file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-bring-up-compose-services" class="md-nav__link">
+    Step 6. Bring up Compose services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-viewing-the-services-on-docker-dashboard" class="md-nav__link">
+    Step 7. Viewing the Services on Docker Dashboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-accessing-the-app" class="md-nav__link">
+    Step 8. Accessing the app
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    Result:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-accessing-the-neo4j" class="md-nav__link">
+    Step 9. Accessing the Neo4j
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-query-the-imported-data-via-a-chat-interface-using-vector-graph-search" class="md-nav__link">
+    Step 10. Query the Imported Data via a Chat Interface Using Vector + Graph Search
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-accessing-genai-stack-pdf-bot" class="md-nav__link">
+    Step 11. Accessing GenAI Stack PDF Bot
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -899,7 +1102,102 @@
 
   <h1>Using Docker Compose</h1>
 
+<p>Follow the instructions to run a complete GenAI Stack using Docker Compose</p>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#prereq">Pre-req</a></li>
+<li><a href="#step-1-install-ollama-on-mac-os">Step 1. Install Ollama on Mac OS</a></li>
+<li><a href="#step-2-create-openai-secret-api-keys">Step 2. Create OpenAI Secret API Keys</a></li>
+<li><a href="#step-3-sign-up-for-langchain-beta-for-api-keys">Step 3. Sign up for LangChain Beta for API Keys</a></li>
+<li><a href="#step-4-clone-the-genai-repo">Step 4. Clone the GenAI Repo</a></li>
+<li><a href="#step-5-create-.env-file">Step 5. Create .env file</a></li>
+<li><a href="#step-6-bring-up-compose-services">Step 6. Bring up Compose Services</a></li>
+<li><a href="#step-7-viewing-the-services-on-docker-dashboard">Step 7. Viewing the services on Docker Dashboard</a></li>
+<li><a href="#step-8-accessing-the-app">Step 8. Accessing the app</a></li>
+<li><a href="#step-9-accessing-the-neo4j">Step 9. Accessing the Neo4j</a> </li>
+<li><a href="#step-10-accessing-genai-stack-pdf-bot">Step 10. Accessing GenAI Stack PDF Bot</a> </li>
+</ul>
+<h2 id="prereq">Prereq<a class="headerlink" href="#prereq" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://docs.docker.com/desktop/install/mac-install/">Install Docker Desktop 4.23.0</a></li>
+</ul>
+<h2 id="step-1-install-ollama-on-mac-os">Step 1. Install Ollama on Mac OS<a class="headerlink" href="#step-1-install-ollama-on-mac-os" title="Permanent link">&para;</a></h2>
+<p>Visit <a href="https://ollama.ai/">this link</a> to download and install Ollama on Macbook.
+<em>Please note that currently, Windows is not supported by Ollama, so Windows users need to generate a OpenAI API key and configure the stack to use gpt-3.5 or gpt-4 in the .env file.</em></p>
+<p><img alt="Image2" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vbn2gzk1wridnwo60bve.png" /></p>
+<p>Choose your preferrable operating system. </p>
+<p><img alt="Image3" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3ldzwwl9s7cqhhybacfy.png" /></p>
+<h2 id="step-2-create-openai-secret-api-keys">Step 2. Create OpenAI Secret API Keys<a class="headerlink" href="#step-2-create-openai-secret-api-keys" title="Permanent link">&para;</a></h2>
+<p>Visit <a href="https://platform.openai.com/account/api-keys">this link</a> to create your new OpenAI Secret API Keys.</p>
+<h2 id="step-3-sign-up-for-langchain-beta-for-api-keys">Step 3. Sign Up for LangChain Beta for API Keys<a class="headerlink" href="#step-3-sign-up-for-langchain-beta-for-api-keys" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.langchain.com/langsmith">Visit this link</a> in order to create Langchain Endpoint and API Keys. You will need the following information</p>
+<div class="highlight"><pre><span></span><code>LANGCHAIN_ENDPOINT=&quot;https://api.smith.langchain.com&quot;
+LANGCHAIN_TRACING_V2=true # false
+LANGCHAIN_PROJECT=default
+LANGCHAIN_API_KEY=ls__cbabccXXXXXX
+</code></pre></div>
+<h2 id="step-4-clone-the-repository">Step 4. Clone the repository<a class="headerlink" href="#step-4-clone-the-repository" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code> git clone https://github.com/docker/genai-stack
+ cd genai-stack
+</code></pre></div>
+<h2 id="step-5-create-env-file">Step 5. Create .env file<a class="headerlink" href="#step-5-create-env-file" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>cat .env 
+OPENAI_API_KEY=sk-EsNJzI5uMBCXXXXXXXX
+OLLAMA_BASE_URL=http://host.docker.internal:11434
+NEO4J_URI=neo4j://database:7687
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=password
+LLM=llama2 #or any Ollama model tag, or gpt-4 or gpt-3.5
+EMBEDDING_MODEL=sentence_transformer #or openai or ollama
 
+LANGCHAIN_ENDPOINT=&quot;https://api.smith.langchain.com&quot;
+LANGCHAIN_TRACING_V2=true # false
+LANGCHAIN_PROJECT=default
+LANGCHAIN_API_KEY=ls__cbabccXXXXXX
+</code></pre></div>
+<p>Don't forget to change "localhost" to "database" under NEO4J_URI entry.</p>
+<h2 id="step-6-bring-up-compose-services">Step 6. Bring up Compose services<a class="headerlink" href="#step-6-bring-up-compose-services" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code> docker compose up -d --build
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>..
+..
+genai-stack-bot-1         |   You can now view your Streamlit app in your browser.
+genai-stack-bot-1         |
+genai-stack-bot-1         |   URL: http://0.0.0.0:8501
+genai-stack-bot-1         |
+genai-stack-pdf_bot-1     |
+genai-stack-pdf_bot-1     |   You can now view your Streamlit app in your browser.
+genai-stack-pdf_bot-1     |
+genai-stack-pdf_bot-1     |   URL: http://0.0.0.0:8503
+genai-stack-pdf_bot-1     |
+genai-stack-loader-1      |
+genai-stack-loader-1      |   You can now view your Streamlit app in your browser.
+genai-stack-loader-1      |
+genai-stack-loader-1      |   URL: http://0.0.0.0:8502
+genai-stack-loader-1      |
+</code></pre></div>
+<h2 id="step-7-viewing-the-services-on-docker-dashboard">Step 7. Viewing the Services on Docker Dashboard<a class="headerlink" href="#step-7-viewing-the-services-on-docker-dashboard" title="Permanent link">&para;</a></h2>
+<p><img alt="Image9" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i4f9w0emxz783prwxp2k.png" /></p>
+<h2 id="step-8-accessing-the-app">Step 8. Accessing the app<a class="headerlink" href="#step-8-accessing-the-app" title="Permanent link">&para;</a></h2>
+<p>Visit <a href="http://0.0.0.0:8502">http://0.0.0.0:8502</a> to access the following:</p>
+<p><img alt="Image11" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9meuijb9sctt417rt7m3.png" /></p>
+<p>Click "Import". It will take a minute or two to run the import. Most of the time is spent generating the embeddings. After or during the import you can click the link to <code>http://localhost:7474</code> and log in with username “neo4j” and password “password” as configured in docker compose. There, you can see an overview in the left sidebar and show some connected data by clicking on the “pill” with the counts.</p>
+<p>The data loader will import the graph using the following schema.</p>
+<p><img alt="Image12" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5pv8g4kymilf1xq0pybd.png" /></p>
+<h2 id="result">Result:<a class="headerlink" href="#result" title="Permanent link">&para;</a></h2>
+<p><img alt="Image13" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/agpcckqn261t69t6ukf4.png" /></p>
+<p>The graph schema for Stack Overflow consists of nodes representing Questions, Answers, Users, and Tags. Users are linked to Questions they’ve asked via the “ASKED” relationship and to Answers they’ve provided with the “ANSWERS” relationship. Each Answer is also inherently associated with a specific Question. Furthermore, Questions are categorized by their relevant topics or technologies using the “TAGGED” relationship connecting them to Tags.</p>
+<h2 id="step-9-accessing-the-neo4j">Step 9. Accessing the Neo4j<a class="headerlink" href="#step-9-accessing-the-neo4j" title="Permanent link">&para;</a></h2>
+<p>As instructed, open <code>http://localhost:7474</code> and log in with username “neo4j” and password “password” as configured in docker compose.</p>
+<p><img alt="Image14" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mrnhfnctjh2ai2kbdeib.png" /></p>
+<h2 id="step-10-query-the-imported-data-via-a-chat-interface-using-vector-graph-search">Step 10. Query the Imported Data via a Chat Interface Using Vector + Graph Search<a class="headerlink" href="#step-10-query-the-imported-data-via-a-chat-interface-using-vector-graph-search" title="Permanent link">&para;</a></h2>
+<p>This application server on <code>http://localhost:8501</code> has the classic LLM chat UI and lets the user ask questions and get answers.</p>
+<p>There’s a switch called RAG mode where the user can rely either completely on the LLMs trained knowledge (RAG: Disabled), or the more capable (RAG: Enabled) mode where the application uses similarity search using text embedding and graph queries to find the most relevant questions and answers in the database.</p>
+<p>Click "Highly ranked questions"</p>
+<h2 id="step-11-accessing-genai-stack-pdf-bot">Step 11. Accessing GenAI Stack PDF Bot<a class="headerlink" href="#step-11-accessing-genai-stack-pdf-bot" title="Permanent link">&para;</a></h2>
+<p>Open <code>http://0.0.0.0:8503/</code> on the browser to access the PDF Bot that allows you to chat with your PDF file.</p>
+<p><img alt="Image15" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v8hs4fipvmvxerdp1e6z.png" /></p>
+<p>In order to test drive, I uploaded my latest resume and asked a quick question.  It responded back with the right answer. Amazing !!</p>
 
 
   

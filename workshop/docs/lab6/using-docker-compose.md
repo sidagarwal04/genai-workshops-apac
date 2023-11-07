@@ -60,7 +60,7 @@ LANGCHAIN_API_KEY=ls__cbabccXXXXXX
 
 
 
-### Step 5. Create .env file
+## Step 5. Create .env file
 
 
 
@@ -134,14 +134,14 @@ The data loader will import the graph using the following schema.
 
 The graph schema for Stack Overflow consists of nodes representing Questions, Answers, Users, and Tags. Users are linked to Questions they’ve asked via the “ASKED” relationship and to Answers they’ve provided with the “ANSWERS” relationship. Each Answer is also inherently associated with a specific Question. Furthermore, Questions are categorized by their relevant topics or technologies using the “TAGGED” relationship connecting them to Tags.
 
-### Step 9. Accessing the Neo4j
+## Step 9. Accessing the Neo4j
 
 As instructed, open `http://localhost:7474` and log in with username “neo4j” and password “password” as configured in docker compose.
 
 ![Image14](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mrnhfnctjh2ai2kbdeib.png)
 
 
-## Query the Imported Data via a Chat Interface Using Vector + Graph Search
+## Step 10. Query the Imported Data via a Chat Interface Using Vector + Graph Search
 
 This application server on `http://localhost:8501` has the classic LLM chat UI and lets the user ask questions and get answers.
 
@@ -150,7 +150,7 @@ There’s a switch called RAG mode where the user can rely either completely on 
 Click "Highly ranked questions"
 
 
-## Accessing GenAI Stack PDF Bot
+## Step 11. Accessing GenAI Stack PDF Bot
 
 Open `http://0.0.0.0:8503/` on the browser to access the PDF Bot that allows you to chat with your PDF file.
 
