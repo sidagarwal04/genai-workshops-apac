@@ -4,7 +4,7 @@
 
 
 
-# Welcome to GenAI Stack Workshops
+# Welcome to GenAI Stack Workshop
 
 
 
