@@ -29,14 +29,27 @@ These hands-on labs will be a combination of theory and practical exercises.
 
 ## Contribution Guidelines
 
-## Clone the repository
+We welcome contributors to improve this lab workshop. 
+
+### Running Lab using a Docker container
+
+```
+ docker run -d -p 8000:8000 ajeetraina/genai-workshop
+```
+
+Open your browser and access the lab via `http://localhost:8000`
+
+
+### Building it from scratch
+
+#### Clone the repository
 
 ``` 
  git clone https://github.com/sidagarwal04/genai-workshops-apac
  cd genai-workshops-apac/workshop
 ```
 
-## Install the prerequisite modules
+#### Install the prerequisite modules
 
 ``` 
  pip3 install -r requirements.txt
