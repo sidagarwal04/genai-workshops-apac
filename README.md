@@ -58,5 +58,6 @@ Open your browser and access the lab via `http://localhost:8000`
 ## Bringing up the site
 
 ``` 
- mkdocs serve
+mkdocs build
+mkdocs serve
 ```
