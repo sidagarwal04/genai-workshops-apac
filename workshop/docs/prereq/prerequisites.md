@@ -1,19 +1,18 @@
 # Prerequisites:
 
-- Basic understanding of Python programming
-- Basic understanding of Docker
-- Basic understanding of Neo4j
+[Download and Install Docker Desktop](https://www.docker.com/products/docker-desktop/) on your system.
 
-## Recommended:
+ - [Apple Chip](https://desktop.docker.com/mac/main/arm64/Docker.dmg)
+ - [Intel Chip](https://desktop.docker.com/mac/main/amd64/Docker.dmg)
+ - [Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
+ - [Linux](https://docs.docker.com/desktop/linux/install/)
 
-- Experience with machine learning and artificial intelligence
-- Experience with knowledge graphs
 
-If you do not have all of the prerequisites, I recommend taking some online courses or tutorials to learn the basics. There are many free resources available, such as those offered by Google AI and Neo4j.
 
-You should also make sure to have the following tools installed on your computer before the workshop:
+## Enabling WSL 2 based engine on Docker Desktop for Windows
 
-- Python
-- Docker Desktop
-- Neo4j
 
+In case you're using Windows 11, we recommend you to install Docker Desktop for Windows.
+Also, you will need to enable WSL 2 by opening Docker Desktop > Settings > Resources > WSL Integration
+
+![wsl2](wsl2.png)

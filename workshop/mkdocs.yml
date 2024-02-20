@@ -24,16 +24,14 @@ nav:
     - Overview of GenAI: lab1/overview.md
     - Current Challenges: lab1/challenges.md
     - What problem does it solve: lab1/solution.md
-    - Getting Started: lab1/getting-started.md
-    - Best Practices: lab1/best-practices.md
 
   - Lab 2 - Using Docker to containerize and deploy GenAI applications:
     - What is Docker: lab2/what-is-docker.md
     - Inner-loop Developer Workflow: lab2/inner-loop-developer.md
     - Docker Developer Workflow: lab2/docker-developer-workflow.md
     - Docker Image Building and Best Practices: lab2/image-building.md
-    - Building Microservices using Docker Compose: lab2/microservices.md
-    - Compose Best Practices: lab2/compose-best-practices.md
+    - Getting Started with Docker Init: lab2/getting-started.md
+    - Getting Started with Sample GenAI App: lab2/genai-stack.md 
 
   - Lab 3 - Using Neo4j to store and manage knowledge graphs:
     - Introduction to Neo4j and Knowledge Graphs: lab3/intro.md
