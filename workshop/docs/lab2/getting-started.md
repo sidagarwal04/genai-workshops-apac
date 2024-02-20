@@ -1,6 +1,14 @@
 
 Example used to demonstrate ```docker init``` CLI for a simple Hello World Python Program
 
+## Clone the repository
+
+```
+ git clone https://github.com/dockersamples/docker-init-demos
+ cd docker-init-demos/python
+```
+
+
 
 ## Run the application
 

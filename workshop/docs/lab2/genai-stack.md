@@ -2,7 +2,7 @@
 
 A simple GenAI app for [Docker's Docs](https://docs.docker.com/) based on the [GenAI Stack](https://github.com/docker/genai-stack) PDF Reader application.
 
-In this guide, you’ll learn how to:
+The generative AI (GenAI) guide teaches you how to containerize an existing GenAI application using Docker. In this guide, you’ll learn how to:
 
 - Containerize and run a Python-based GenAI application
 - Set up a local environment to run the complete GenAI stack locally for development
@@ -102,8 +102,9 @@ server-1  |
 
 Open a browser and view the application at [http://localhost:8000](http://localhost:8000). You should see a simple Streamlit application. The application may take a few minutes to download the embedding model. While the download is in progress, **Running** appears in the top-right corner.
 
+<img width="775" alt="image" src="https://github.com/ajeetraina/docker-genai-sample/assets/313480/128c7ccb-68fa-4d4c-9761-ede1642c19f3">
 
-![streamlit](streamlit.png)
+
 
 The application requires a Neo4j database service and an LLM service to
 function. If you have access to services that you ran outside of Docker, specify
@@ -111,9 +112,41 @@ the connection information and try it out. If you don't have the services
 running, continue with this guide to learn how you can run some or all of these
 services with Docker.
 
-In the terminal, press `ctrl`+`c` to stop the application.
+## Starting Neo4j container
 
-## Summary
+```
+ docker run -d --name database -p 7474:7474 -p 7687:7687 -e NEO4J_AUTH=neo4j/password neo4j:5.11
+```
 
-In this section, you learned how you can containerize and run your GenAI
-application using Docker.
+## Starting Ollama container
+
+```
+ docker run -d \
+  --name ollama \
+  -p 11434:11434 \
+  -v ollama_volume:/root/.ollama \
+  ollama/ollama:latest
+```
+
+## Accessing the application
+
+
+<img width="825" alt="image" src="https://github.com/ajeetraina/docker-genai-sample/assets/313480/b81c248c-410a-4ae5-a013-692debdfd5cc">
+
+You can populate the form using the following values:
+
+
+```
+Neo4j URI - neo4j://192.168.1.3:7687
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=password
+OLLAMA_BASE_URL=http://host.docker.internal:11434
+OPENAI Key=<add it here>
+```
+
+
+## Chatting with the PDF
+
+<img width="789" alt="image" src="https://github.com/ajeetraina/docker-genai-sample/assets/313480/117a42a4-91bb-4ef3-9173-849c1973c52e">
+
+
