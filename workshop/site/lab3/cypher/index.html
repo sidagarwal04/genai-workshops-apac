@@ -13,10 +13,6 @@
         <link rel="canonical" href="https://genai-workshop.neo4j.com/lab3/cypher/">
       
       
-        <link rel="prev" href="../intro/">
-      
-      
-        <link rel="next" href="../../lab4/llms-intro/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>Cypher Query Language - GenAI Stack Workshop</title>
+        <title>Cypher - GenAI Stack Workshop</title>
       
     
     
@@ -112,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cypher Query Language
+              Cypher
             
           </span>
         </div>
@@ -327,11 +323,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab1/solution/" class="md-nav__link">
+      <a href="../../lab1/challenges/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    What problems does it solve?
+    Current Challenges
   </span>
   
 
@@ -348,11 +344,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab1/challenges/" class="md-nav__link">
+      <a href="../../lab1/solution/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Current Challenges
+    What problem does it solve
   </span>
   
 
@@ -518,11 +514,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/genai-stack/" class="md-nav__link">
+      <a href="../../lab2/compose-watch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Getting Started with Sample GenAI App
+    Overview of Compose Watch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab2/compose-profile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview of Compose Profile
   </span>
   
 
@@ -543,38 +560,36 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Lab 3 - Using Neo4j to store and manage data in the form of knowledge graphs
+    Lab 3 - Using Neo4j to store and manage knowledge graphs
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Lab 3 - Using Neo4j to store and manage data in the form of knowledge graphs
+            Lab 3 - Using Neo4j to store and manage knowledge graphs
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -603,123 +618,39 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Cypher Query Language
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../running-neo4j-in-a-docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cypher Query Language
+    Running Neo4j in a Docker container
   </span>
   
 
       </a>
-      
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+              
+            
+              
+                
   
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#cypher-syntax" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cypher Syntax
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cypher Syntax">
-      <ul class="md-nav__list">
+    <li class="md-nav__item">
+      <a href="../neo4j-docker-extension/" class="md-nav__link">
         
-          <li class="md-nav__item">
-  <a href="#creating-nodes-and-relationships" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating Nodes and Relationships
-    </span>
-  </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#querying-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Querying Data
-    </span>
-  </a>
+  <span class="md-ellipsis">
+    Neo4j Docker Extension
+  </span>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#updating-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updating Data
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deleting-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deleting Data
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#aggregation-and-ordering" class="md-nav__link">
-    <span class="md-ellipsis">
-      Aggregation and Ordering
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#combining-operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Combining Operations
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
+
+      </a>
     </li>
   
 
@@ -755,7 +686,7 @@
             
   
   <span class="md-ellipsis">
-    Lab 4 - Using LangChain to integrate LLMs into Gen-AI applications
+    Lab 4 - Using LangChain to generate text, translate languages, and write different kinds of creative content
   </span>
   
 
@@ -765,7 +696,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Lab 4 - Using LangChain to integrate LLMs into Gen-AI applications
+            Lab 4 - Using LangChain to generate text, translate languages, and write different kinds of creative content
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -776,7 +707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab4/llms-intro/" class="md-nav__link">
+      <a href="../../lab4/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -797,11 +728,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab4/intro/" class="md-nav__link">
+      <a href="../../lab4/rag.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Introduction to Langchain
+    Introduction to RAG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab4/kgvector.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Why KG+Vector are better for RAG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab4/challenges.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Current Challenges
   </span>
   
 
@@ -904,11 +877,74 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab5/intro-to-ollama/" class="md-nav__link">
+      <a href="../../lab5/challenges.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Introduction to Ollama
+    Current Challenges
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab5/getting-started.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab5/ollama.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Running Ollama in a Docker container
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab5/getting-started.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Best Practices
   </span>
   
 
@@ -969,53 +1005,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab6/llms-hallucination/" class="md-nav__link">
+      <a href="../../lab6/genai-stack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    LLMs Hallucinations
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab6/avoid-hallucination/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Avoid LLM Hallucination
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab6/rag/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction to RAG
+    Getting Started with Sample GenAI App
   </span>
   
 
@@ -1206,7 +1200,7 @@
   
 
 
-  <h1>Cypher Query Language</h1>
+  <h1>Cypher</h1>
 
 <p>Cypher is a declarative graph query language that allows for efficient querying and updating of graph databases, such as those managed by Neo4j. It's designed to be intuitive and to closely resemble English, making it easier to express complex queries and manipulations of graph data. It uses an ASCII-art style syntax consisting of brackets, dashes and arrows.</p>
 <p><img alt="cypher" src="../cypher.png" /></p>
