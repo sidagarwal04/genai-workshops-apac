@@ -13,10 +13,10 @@
         <link rel="canonical" href="https://genai-workshop.neo4j.com/lab6/rag/">
       
       
-        <link rel="prev" href="../llms-hallucination/">
+        <link rel="prev" href="../avoid-hallucination/">
       
       
-        <link rel="next" href="../kgvector/">
+        <link rel="next" href="../using-docker-compose/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -74,6 +74,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#data-cut-off-dates" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -806,90 +811,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab5/challenges/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Current Challenges
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab5/getting-started/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Getting Started
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab5/ollama/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Running Ollama in a Docker container
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab5/getting-started/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Best Practices
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -961,6 +882,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../avoid-hallucination/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Avoid LLM Hallucination
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -970,6 +912,17 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Introduction to RAG
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -981,27 +934,83 @@
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../kgvector/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    Why KG+Vector are better for RAG
-  </span>
-  
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-cut-off-dates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Cut-Off Dates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retrieval-augmented-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieval Augmented Generation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retrieval Augmented Generation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#benefits-of-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of RAG
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semantic-search-vs-traditional-keyword-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantic Search vs. Traditional Keyword Search
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vectors-and-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vectors and embeddings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vectors-and-neo4j" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vectors and Neo4j
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1095,6 +1104,74 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-cut-off-dates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Cut-Off Dates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retrieval-augmented-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieval Augmented Generation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retrieval Augmented Generation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#benefits-of-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of RAG
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semantic-search-vs-traditional-keyword-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantic Search vs. Traditional Keyword Search
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vectors-and-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vectors and embeddings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vectors-and-neo4j" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vectors and Neo4j
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1113,7 +1190,90 @@
 
   <h1>Introduction to RAG</h1>
 
-
+<p>Grounding is the process of providing context to an LLM to improve the accuracy of its responses. For developers and data scientists, grounding usually offers the highest impact for the lowest effort.</p>
+<h2 id="data-cut-off-dates">Data Cut-Off Dates<a class="headerlink" href="#data-cut-off-dates" title="Permanent link">&para;</a></h2>
+<p>Training a Large Language Model has a high computational cost. According to Wikipedia, OpenAI’s GPT-3 model was trained on 175 billion parameters, and the resulting trained model takes 800GB to store.</p>
+<p>Retraining a model on new data would be expensive and time-consuming. A model may take weeks or months to train.</p>
+<p>Providing real-time updates on fast-moving breaking news would be out of the question.</p>
+<h2 id="retrieval-augmented-generation">Retrieval Augmented Generation<a class="headerlink" href="#retrieval-augmented-generation" title="Permanent link">&para;</a></h2>
+<p>A news agency could train a model on static data and supplement the pre-existing knowledge base with real-time data retrieved from up-to-date sources.</p>
+<p>This approach is known as <strong>Retrieval Augmented Generation</strong>, or <strong>RAG</strong></p>
+<p>RAG combines the strengths of large-scale language models with external retrieval or search mechanisms, enabling relevant information from vast datasets to be dynamically fed into the model during the generation process, thereby enhancing its ability to provide detailed and contextually accurate responses.</p>
+<p>In summary, by adding content from additional data sources, you can improve the responses generated by an LLM.</p>
+<h3 id="benefits-of-rag">Benefits of RAG<a class="headerlink" href="#benefits-of-rag" title="Permanent link">&para;</a></h3>
+<p>The main benefit of RAG is its <strong>enhanced accuracy</strong>. By dynamically pulling information from external, domain-specific sources, a response grounded by RAG can provide more detailed and contextually accurate answers than a standalone LLM.</p>
+<p>RAG provides additional benefits of:</p>
+<ul>
+<li>
+<p>Increased transparency, as the sources of the information can be stored and examined.</p>
+</li>
+<li>
+<p>Security, as the data sources can be secured and access controlled.</p>
+</li>
+<li>
+<p>Accuracy and timeliness, as the data sources can be updated in real-time.</p>
+</li>
+<li>
+<p>Access to private or proprietary data</p>
+</li>
+</ul>
+<p>RAG could support the new agency chatbot by:</p>
+<ol>
+<li>
+<p>Accessing real-time new feeds</p>
+</li>
+<li>
+<p>Pulling recent headlines or news articles from a database,</p>
+</li>
+<li>
+<p>Giving this additional context to the LLM</p>
+</li>
+</ol>
+<p>New articles stored in a knowledge graph would be ideal for this use case. A knowledge graph could pass the LLM detail about the relationship between the entities involved and the article’s metadata.</p>
+<p>For example, when asking about the results of a recent election, the knowledge could provide additional context about the candidates, news stories relating to them, or interesting articles from the same author.</p>
+<p><img alt="rag" src="../llm-news-agency-knowledge-graph.svg" /></p>
+<p>One of the challenges of RAG is understanding what the user is asking for and surfacing the correct information to pass to the LLM.</p>
+<h2 id="semantic-search-vs-traditional-keyword-search">Semantic Search vs. Traditional Keyword Search<a class="headerlink" href="#semantic-search-vs-traditional-keyword-search" title="Permanent link">&para;</a></h2>
+<p>Semantic search aims to understand search phrases' intent and contextual meaning, rather than focusing on individual keywords.</p>
+<p>Traditional keyword search often depends on exact-match keywords or proximity-based algorithms that find similar words.</p>
+<p>For example, if you input "apple" in a traditional search, you might predominantly get results about the fruit.</p>
+<p>However, in a semantic search, the engine tries to gauge the context: Are you searching about the fruit, the tech company, or something else?</p>
+<p>The results are tailored based on the term and the perceived intent.</p>
+<h2 id="vectors-and-embeddings">Vectors and embeddings<a class="headerlink" href="#vectors-and-embeddings" title="Permanent link">&para;</a></h2>
+<p>In natural language processing (NLP) and machine learning, numerical representations (known as <strong>vectors</strong>) represent words and phrases.</p>
+<p>Each dimension in a vector can represent a particular semantic aspect of the word or phrase. When multiple dimensions are combined, they can convey the overall meaning of the word or phrase.</p>
+<p>A vector will not directly encode tangible attributes like color, taste, or shape. Instead, the model will generate a list of numerical values that closely align the word with related words such as health, nutrition, and wellness.</p>
+<p>When applied in a search context, the vector for "apple" can be compared to the vectors for other words or phrases to determine the most relevant results.</p>
+<p>You can create vectors in various ways, but one of the most common methods is to use a <strong>large language model</strong>. These vectors are known as <strong>embeddings</strong>. With advanced models, these embeddings also contain contextual information.</p>
+<p>For example, the embeddings for the word "apple" are <code>0.0077788467, -0.02306925, -0.007360777, -0.027743412, -0.0045747845, 0.01289164, -0.021863015, -0.008587573, 0.01892967, -0.029854324, -0.0027962727, 0.020108491, -0.004530236, 0.009129008,</code> and so on.</p>
+<p>The vector for a word can change based on its surrounding context. For instance, the word <code>bank</code> will have a different vector in <code>river</code> bank than in <code>savings</code> bank.</p>
+<p>Semantic search systems can use these contextual embeddings to understand user intent.</p>
+<p>You can use the <code>distance</code> or <code>angle</code> between vectors to gauge the semantic similarity between words or phrases.</p>
+<p>Words with similar meanings or contexts will have vectors that are close together, while unrelated words will be farther apart.</p>
+<p>This principle is employed in semantic search to find contextually relevant results for a user’s query.</p>
+<p>A semantic search involves the following steps:</p>
+<ol>
+<li>
+<p>The user submits a query.</p>
+</li>
+<li>
+<p>The system creates a vector representation (embedding) of the query.</p>
+</li>
+<li>
+<p>The system compares the query vector to the vectors of the indexed data.</p>
+</li>
+<li>
+<p>The results are scored based on their similarity.</p>
+</li>
+<li>
+<p>The system returns the most relevant results to the user.</p>
+</li>
+</ol>
+<p><img alt="vectorserach" src="../semantic-vector-search.svg" />
+Vectors can represent more than just words. They can also represent entire documents, images, audio, or other data types. They are instrumental in the operation of many other machine-learning tasks.</p>
+<h2 id="vectors-and-neo4j">Vectors and Neo4j<a class="headerlink" href="#vectors-and-neo4j" title="Permanent link">&para;</a></h2>
+<p>Vectors are the backbone of semantic search. They enable systems to understand and represent the complex, multi-dimensional nature of language, context, and meaning.</p>
+<p>Since the v5.11 release, Neo4j has a Vector search index, allowing you to query for nodes based on their vector representations.</p>
 
 
 

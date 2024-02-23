@@ -13,10 +13,10 @@
         <link rel="canonical" href="https://genai-workshop.neo4j.com/lab6/llms-hallucination/">
       
       
-        <link rel="prev" href="../../lab5/getting-started/">
+        <link rel="prev" href="../../lab5/intro-to-ollama/">
       
       
-        <link rel="next" href="../rag/">
+        <link rel="next" href="../avoid-hallucination/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -74,6 +74,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#fixing-hallucinations" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -806,90 +811,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab5/challenges/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Current Challenges
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab5/getting-started/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Getting Started
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab5/ollama/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Running Ollama in a Docker container
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab5/getting-started/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Best Practices
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -950,6 +871,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    LLMs Hallucinations
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -960,6 +892,53 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fixing-hallucinations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixing Hallucinations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avoid-hallucination/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Avoid LLM Hallucination
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -977,27 +956,6 @@
   
   <span class="md-ellipsis">
     Introduction to RAG
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../kgvector/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Why KG+Vector are better for RAG
   </span>
   
 
@@ -1095,6 +1053,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fixing-hallucinations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixing Hallucinations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1113,7 +1088,20 @@
 
   <h1>LLMs Hallucinations</h1>
 
-
+<p>While LLMs provide a lot of potential, you should also be cautious.</p>
+<p>At their core, LLMs are trained to predict the following word(s) in a sequence.</p>
+<p>The words are based on the patterns and relationships from other text in the training data. The sources for this training data are often the internet, books, and other publicly available text. This data could be of questionable quality and maybe be incorrect. Training happens at a point in time, it may not reflect the current state of the world and would not include any private information.</p>
+<p>LLMs are fine-tuned to be as helpful as possible, even if that means occasionally generating misleading or baseless content, a phenomenon known as hallucination.</p>
+<p>For example, when asked to "<em>Describe the moon.</em>" and LLM may respond with "<em>The moon is made of cheese.</em>". While this is a common saying, it is not true.</p>
+<p><img alt="confused_llm" src="../confused-llm.svg" /></p>
+<p>While LLMs can represent the essence of words and phrases, they don’t possess a genuine understanding or ethical judgment of the content.</p>
+<p>These factors can lead to outputs that might be biased, devoid of context, or lack logical coherence.</p>
+<h2 id="fixing-hallucinations">Fixing Hallucinations<a class="headerlink" href="#fixing-hallucinations" title="Permanent link">&para;</a></h2>
+<p>Providing additional <strong>contextual</strong> data helps to ground the LLM’s responses and make them more accurate.</p>
+<p>A knowledge graph is a mechanism for providing additional data to an LLM. Data within the knowledge graph can guide the LLM to provide more relevant, accurate, and reliable responses.</p>
+<p>While the LLM uses its language skills to interpret and respond to the contextual data, it will not disregard the original training data.</p>
+<p>You can think of the original training data as the base knowledge and linguistic capabilities, while the contextual information guides in specific situations.</p>
+<p>The combination of both approaches enables the LLM to generate more meaningful responses.</p>
 
 
 

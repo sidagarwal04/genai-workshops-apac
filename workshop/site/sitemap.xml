@@ -116,27 +116,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://genai-workshop.neo4j.com/lab4/rag/</loc>
-         <lastmod>2024-02-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://genai-workshop.neo4j.com/lab5/challenges/</loc>
-         <lastmod>2024-02-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://genai-workshop.neo4j.com/lab5/getting-started/</loc>
-         <lastmod>2024-02-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://genai-workshop.neo4j.com/lab5/intro-to-ollama/</loc>
          <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://genai-workshop.neo4j.com/lab5/ollama/</loc>
+         <loc>https://genai-workshop.neo4j.com/lab6/avoid-hallucination/</loc>
          <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>

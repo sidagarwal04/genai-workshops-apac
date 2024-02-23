@@ -45,15 +45,11 @@ nav:
 
   - Lab 5 - Using Ollama to train and deploy large language models:
     - Introduction to Ollama: lab5/intro-to-ollama.md
-    - Current Challenges: lab5/challenges.md
-    - Getting Started: lab5/getting-started.md
-    - Running Ollama in a Docker container: lab5/ollama.md
-    - Best Practices: lab5/getting-started.md
 
   - Lab 6 - Gen-AI Stack - Let’s bring it together:
     - LLMs Hallucinations: lab6/llms-hallucination.md
+    - Avoid LLM Hallucination: lab6/avoid-hallucination.md
     - Introduction to RAG: lab6/rag.md
-    - Why KG+Vector are better for RAG: lab6/kgvector.md
     - Using Docker Compose: lab6/using-docker-compose.md
     - Troubleshooting: lab6/troubleshooting.md
     - Upcoming Feature: lab6/upcoming-feature.md
