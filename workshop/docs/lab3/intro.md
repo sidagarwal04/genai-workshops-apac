@@ -1,1 +1,1 @@
-##Introduction to Neo4j
+Introduction to Neo4j
