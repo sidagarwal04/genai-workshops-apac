@@ -16,7 +16,7 @@
         <link rel="prev" href="../docker-developer-workflow/">
       
       
-        <link rel="next" href="../microservices/">
+        <link rel="next" href="../getting-started/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.15">
@@ -73,6 +73,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#introducing-docker-init" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -308,34 +313,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab1/getting-started/" class="md-nav__link">
-        Getting Started
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab1/best-practices/" class="md-nav__link">
-        Best Practices
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -428,9 +405,52 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Docker Image Building and Best Practices
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Docker Image Building and Best Practices
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducing-docker-init" class="md-nav__link">
+    Introducing Docker Init
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whos-this-for" class="md-nav__link">
+    Who’s this for?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-docker-init" class="md-nav__link">
+    Benefits of Docker Init
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -443,8 +463,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../microservices/" class="md-nav__link">
-        Building Microservices using Docker Compose
+      <a href="../getting-started/" class="md-nav__link">
+        Getting Started with Docker Init
       </a>
     </li>
   
@@ -457,8 +477,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../compose-best-practices/" class="md-nav__link">
-        Compose Best Practices
+      <a href="../genai-stack/" class="md-nav__link">
+        Getting Started with Sample GenAI App
       </a>
     </li>
   
@@ -853,6 +873,35 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducing-docker-init" class="md-nav__link">
+    Introducing Docker Init
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whos-this-for" class="md-nav__link">
+    Who’s this for?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-docker-init" class="md-nav__link">
+    Benefits of Docker Init
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -871,7 +920,27 @@
 
   <h1>Docker Image Building and Best Practices</h1>
 
-
+<p><img alt="best practice" src="../bestpractices.png" /></p>
+<h2 id="introducing-docker-init">Introducing Docker Init<a class="headerlink" href="#introducing-docker-init" title="Permanent link">&para;</a></h2>
+<p><img alt="docker init" src="../dockerinit.png" /></p>
+<p>Introduced for the first time in Docker Desktop 4.18, the new docker init CLI generates Docker assets for projects, making it easier to create Docker images and containers. When you run the docker init command in your project directory, it will guide you through the creation of the necessary files for your project with sensible defaults. These files include:</p>
+<div class="highlight"><pre><span></span><code>.dockerignore
+Dockerfile
+docker-compose.yaml
+</code></pre></div>
+<p>The docker init command also allows you to choose the application platform that your project uses and the relative directory of your main package. </p>
+<h2 id="whos-this-for">Who’s this for?<a class="headerlink" href="#whos-this-for" title="Permanent link">&para;</a></h2>
+<p>This feature is targeted at developers who want to quickly create and manage Docker assets without having to manually configure everything. </p>
+<p>Note: Currently, the CLI is in beta phase. </p>
+<h2 id="benefits-of-docker-init">Benefits of Docker Init<a class="headerlink" href="#benefits-of-docker-init" title="Permanent link">&para;</a></h2>
+<p>The advantages of using the docker init command include:</p>
+<ul>
+<li>Simplified Docker asset creation: The command streamlines the creation of necessary Docker files, reducing the chances of errors and ensuring that best practices are followed.</li>
+<li>Saves time and effort: With the default settings and guided prompts, users can quickly create Docker assets without the need for extensive knowledge of Docker or its syntax.</li>
+<li>Better project organization: The generated files provide a standardized and organized structure for the project, making it easier for developers to maintain and update the project over time.</li>
+<li>Enhanced portability: By using Docker assets, projects become more portable across different environments, making it easier to move the project from development to production.</li>
+</ul>
+<p><img alt="docker init intro" src="../dockerinit-intro.png" /></p>
 
 
   

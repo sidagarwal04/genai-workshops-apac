@@ -10,20 +10,20 @@
         <meta name="author" content="GenAI Developers">
       
       
-        <link rel="canonical" href="https://genai-workshop.neo4j.com/lab5/challenges/">
+        <link rel="canonical" href="https://genai-workshop.neo4j.com/lab2/genai-stack/">
       
       
-        <link rel="prev" href="../../lab4/best-practices/">
+        <link rel="prev" href="../getting-started/">
       
       
-        <link rel="next" href="../getting-started/">
+        <link rel="next" href="../../lab3/intro/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.15">
     
     
       
-        <title>Current Challenges - GenAI Stack Workshop</title>
+        <title>Getting Started with Sample GenAI App - GenAI Stack Workshop</title>
       
     
     
@@ -74,6 +74,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#docker-genai-sample" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Current Challenges
+              Getting Started with Sample GenAI App
             
           </span>
         </div>
@@ -320,14 +325,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
       
       
       
@@ -336,7 +343,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Lab 2 - Using Docker to containerize and deploy GenAI applications
@@ -349,7 +356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/what-is-docker/" class="md-nav__link">
+      <a href="../what-is-docker/" class="md-nav__link">
         What is Docker
       </a>
     </li>
@@ -363,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/inner-loop-developer/" class="md-nav__link">
+      <a href="../inner-loop-developer/" class="md-nav__link">
         Inner-loop Developer Workflow
       </a>
     </li>
@@ -377,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/docker-developer-workflow/" class="md-nav__link">
+      <a href="../docker-developer-workflow/" class="md-nav__link">
         Docker Developer Workflow
       </a>
     </li>
@@ -391,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/image-building/" class="md-nav__link">
+      <a href="../image-building/" class="md-nav__link">
         Docker Image Building and Best Practices
       </a>
     </li>
@@ -405,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         Getting Started with Docker Init
       </a>
     </li>
@@ -417,11 +424,94 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../lab2/genai-stack/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting Started with Sample GenAI App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Getting Started with Sample GenAI App
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whats-this-sample-app-all-about" class="md-nav__link">
+    What's this sample app all about?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialize-docker-assets" class="md-nav__link">
+    Initialize Docker assets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-application" class="md-nav__link">
+    Run the application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-neo4j-container" class="md-nav__link">
+    Starting Neo4j container
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-ollama-container" class="md-nav__link">
+    Starting Ollama container
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-application" class="md-nav__link">
+    Accessing the application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatting-with-the-pdf" class="md-nav__link">
+    Chatting with the PDF
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -635,16 +725,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
       
       
       
@@ -653,7 +741,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Lab 5 - Using Ollama to train and deploy large language models
@@ -664,19 +752,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../lab5/challenges/" class="md-nav__link">
         Current Challenges
       </a>
-      
     </li>
   
 
@@ -688,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../lab5/getting-started/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -702,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ollama/" class="md-nav__link">
+      <a href="../../lab5/ollama/" class="md-nav__link">
         Running Ollama in a Docker container
       </a>
     </li>
@@ -716,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../lab5/getting-started/" class="md-nav__link">
         Best Practices
       </a>
     </li>
@@ -824,6 +904,65 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whats-this-sample-app-all-about" class="md-nav__link">
+    What's this sample app all about?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialize-docker-assets" class="md-nav__link">
+    Initialize Docker assets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-application" class="md-nav__link">
+    Run the application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-neo4j-container" class="md-nav__link">
+    Starting Neo4j container
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-ollama-container" class="md-nav__link">
+    Starting Ollama container
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-application" class="md-nav__link">
+    Accessing the application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatting-with-the-pdf" class="md-nav__link">
+    Chatting with the PDF
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -841,9 +980,108 @@
   
 
 
-  <h1>Current Challenges</h1>
+<h1 id="docker-genai-sample">docker-genai-sample<a class="headerlink" href="#docker-genai-sample" title="Permanent link">&para;</a></h1>
+<p>A simple GenAI app for <a href="https://docs.docker.com/">Docker's Docs</a> based on the <a href="https://github.com/docker/genai-stack">GenAI Stack</a> PDF Reader application.</p>
+<p>The generative AI (GenAI) guide teaches you how to containerize an existing GenAI application using Docker. In this guide, you’ll learn how to:</p>
+<ul>
+<li>Containerize and run a Python-based GenAI application</li>
+<li>Set up a local environment to run the complete GenAI stack locally for development</li>
+<li>Start by containerizing an existing GenAI application.</li>
+</ul>
+<h2 id="whats-this-sample-app-all-about">What's this sample app all about?<a class="headerlink" href="#whats-this-sample-app-all-about" title="Permanent link">&para;</a></h2>
+<p>The sample application used in this guide is a modified version of the PDF Reader application from the <a href="https://github.com/docker/genai-stack">GenAI Stack</a> demo applications. The application is a full stack Python application that lets you ask questions about a PDF file.</p>
+<p>The application uses <a href="https://www.langchain.com/">LangChain</a> for orchestration, <a href="https://streamlit.io/">Streamlit</a> for the UI, <a href="https://ollama.ai/">Ollama</a> to run the LLM, and <a href="https://neo4j.com/">Neo4j</a> to store vectors.</p>
+<p>Clone the sample application. Open a terminal, change directory to a directory that you want to work in, and run the following command to clone the repository:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ajeetraina/docker-genai-sample
+</code></pre></div>
+<p>You should now have the following files in your <code>docker-genai-sample</code> directory.</p>
+<div class="highlight"><pre><span></span><code>├── docker-genai-sample/
+│ ├── .gitignore
+│ ├── app.py
+│ ├── chains.py
+│ ├── env.example
+│ ├── requirements.txt
+│ ├── util.py
+│ ├── LICENSE
+│ └── README.md
+</code></pre></div>
+<h2 id="initialize-docker-assets">Initialize Docker assets<a class="headerlink" href="#initialize-docker-assets" title="Permanent link">&para;</a></h2>
+<p>Now that you have an application, you can use <code>docker init</code> to create the necessary Docker assets to containerize your application. Inside the <code>docker-genai-sample</code> directory, run the <code>docker init</code> command. <code>docker init</code> provides some default configuration, but you'll need to answer a few questions about your application. For example, this application uses Streamlit to run. Refer to the following <code>docker init</code> example and use the same answers for your prompts.</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>docker<span class="w"> </span>init
+<span class="go">Welcome to the Docker Init CLI!</span>
 
+<span class="go">This utility will walk you through creating the following files with sensible defaults for your project:</span>
+<span class="go">  - .dockerignore</span>
+<span class="go">  - Dockerfile</span>
+<span class="go">  - compose.yaml</span>
+<span class="go">  - README.Docker.md</span>
 
+<span class="go">Let&#39;s get started!</span>
+
+<span class="go">? What application platform does your project use? Python</span>
+<span class="go">? What version of Python do you want to use? 3.11.4</span>
+<span class="go">? What port do you want your app to listen on? 8000</span>
+<span class="go">? What is the command to run your app? streamlit run app.py --server.address=0.0.0.0 --server.port=8000</span>
+</code></pre></div>
+<p>You should now have the following contents in your <code>docker-genai-sample</code>
+directory.</p>
+<div class="highlight"><pre><span></span><code>├── docker-genai-sample/
+│ ├── .dockerignore
+│ ├── .gitignore
+│ ├── app.py
+│ ├── chains.py
+│ ├── compose.yaml
+│ ├── env.example
+│ ├── requirements.txt
+│ ├── util.py
+│ ├── Dockerfile
+│ ├── LICENSE
+│ ├── README.Docker.md
+│ └── README.md
+</code></pre></div>
+<p>To learn more about the files that <code>docker init</code> added, see the following:
+ - <a href="../../../engine/reference/builder.md">Dockerfile</a>
+ - <a href="../../../engine/reference/builder.md#dockerignore-file">.dockerignore</a>
+ - <a href="../../../compose/compose-file/_index.md">compose.yaml</a></p>
+<h2 id="run-the-application">Run the application<a class="headerlink" href="#run-the-application" title="Permanent link">&para;</a></h2>
+<p>Inside the <code>docker-genai-sample</code> directory, run the following command in a
+terminal.</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>--build
+</code></pre></div>
+<p>Docker builds and runs your application. Depending on your network connection, it may take several minutes to download all the dependencies. You'll see a message like the following in the terminal when the application is running.</p>
+<div class="highlight"><pre><span></span><code><span class="go">server-1  |   You can now view your Streamlit app in your browser.</span>
+<span class="go">server-1  |</span>
+<span class="go">server-1  |   URL: http://0.0.0.0:8000</span>
+<span class="go">server-1  |</span>
+</code></pre></div>
+<p>Open a browser and view the application at <a href="http://localhost:8000">http://localhost:8000</a>. You should see a simple Streamlit application. The application may take a few minutes to download the embedding model. While the download is in progress, <strong>Running</strong> appears in the top-right corner.</p>
+<p><img width="775" alt="image" src="https://github.com/ajeetraina/docker-genai-sample/assets/313480/128c7ccb-68fa-4d4c-9761-ede1642c19f3"></p>
+<p>The application requires a Neo4j database service and an LLM service to
+function. If you have access to services that you ran outside of Docker, specify
+the connection information and try it out. If you don't have the services
+running, continue with this guide to learn how you can run some or all of these
+services with Docker.</p>
+<h2 id="starting-neo4j-container">Starting Neo4j container<a class="headerlink" href="#starting-neo4j-container" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code> docker run -d --name database -p 7474:7474 -p 7687:7687 -e NEO4J_AUTH=neo4j/password neo4j:5.11
+</code></pre></div>
+<h2 id="starting-ollama-container">Starting Ollama container<a class="headerlink" href="#starting-ollama-container" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code> docker run -d \
+  --name ollama \
+  -p 11434:11434 \
+  -v ollama_volume:/root/.ollama \
+  ollama/ollama:latest
+</code></pre></div>
+<h2 id="accessing-the-application">Accessing the application<a class="headerlink" href="#accessing-the-application" title="Permanent link">&para;</a></h2>
+<p><img width="825" alt="image" src="https://github.com/ajeetraina/docker-genai-sample/assets/313480/b81c248c-410a-4ae5-a013-692debdfd5cc"></p>
+<p>You can populate the form using the following values:</p>
+<div class="highlight"><pre><span></span><code>Neo4j URI - neo4j://192.168.1.3:7687
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=password
+OLLAMA_BASE_URL=http://host.docker.internal:11434
+OPENAI Key=&lt;add it here&gt;
+</code></pre></div>
+<h2 id="chatting-with-the-pdf">Chatting with the PDF<a class="headerlink" href="#chatting-with-the-pdf" title="Permanent link">&para;</a></h2>
+<p><img width="789" alt="image" src="https://github.com/ajeetraina/docker-genai-sample/assets/313480/117a42a4-91bb-4ef3-9173-849c1973c52e"></p>
 
 
   
