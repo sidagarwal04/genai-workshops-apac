@@ -37,7 +37,7 @@ There are no clear legal and regulatory frameworks in place for the use of GenAI
 Develop industry standards: Industry associations and organizations can work together to develop standards for the use of GenAI. These standards can help to ensure that GenAI is used in a responsible and ethical manner.
 Advocate for clear regulations: Businesses and organizations can advocate for clear and fair regulations for the use of GenAI. This will help to create a more predictable and stable environment for GenAI innovation.
 
-### 5. Ethical considerations
+## 5. Ethical considerations
 
 GenAI raises a number of ethical concerns, such as the potential for bias, misuse, and job displacement. It is important to address these concerns before GenAI is widely adopted.
 

@@ -22,8 +22,8 @@ nav:
   - Prerequisites: prereq/prerequisites.md
   - Lab 1 - Building and deploying a simple GenAI application:
     - Overview of GenAI: lab1/overview.md
-    - Current Challenges: lab1/challenges.md
-    - What problem does it solve: lab1/solution.md
+    - What problems does it solve?: lab1/solution.md
+    - Current Challenges: lab1/challenges.md    
 
   - Lab 2 - Using Docker to containerize and deploy GenAI applications:
     - What is Docker: lab2/what-is-docker.md
