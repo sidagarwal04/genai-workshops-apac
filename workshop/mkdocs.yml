@@ -35,10 +35,8 @@ nav:
 
   - Lab 3 - Using Neo4j to store and manage knowledge graphs:
     - Introduction to Neo4j and Knowledge Graphs: lab3/intro.md
-    - Running Neo4j in a Docker container: lab3/running-neo4j-in-a-docker.md
-    - Neo4j Docker Extension: lab3/neo4j-docker-extension.md
-
-
+    - Cypher Query Language: lab3/cypher.md
+    
   - Lab 4 - Using LangChain to generate text, translate languages, and write different kinds of creative content:
     - Introduction to LLMs: lab4/intro.md
     - Introduction to RAG: lab4/rag.md

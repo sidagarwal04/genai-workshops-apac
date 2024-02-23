@@ -10,9 +10,13 @@
         <meta name="author" content="GenAI Developers">
       
       
-        <link rel="canonical" href="https://genai-workshop.neo4j.com/lab2/compose-best-practices/">
+        <link rel="canonical" href="https://genai-workshop.neo4j.com/lab3/cypher/">
       
       
+        <link rel="prev" href="../intro/">
+      
+      
+        <link rel="next" href="../../lab4/intro/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>Compose best practices - GenAI Stack Workshop</title>
+        <title>Cypher Query Language - GenAI Stack Workshop</title>
       
     
     
@@ -71,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#cypher-syntax" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -103,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Compose best practices
+              Cypher Query Language
             
           </span>
         </div>
@@ -404,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what-is-docker/" class="md-nav__link">
+      <a href="../../lab2/what-is-docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -425,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../inner-loop-developer/" class="md-nav__link">
+      <a href="../../lab2/inner-loop-developer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker-developer-workflow/" class="md-nav__link">
+      <a href="../../lab2/docker-developer-workflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -467,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../image-building/" class="md-nav__link">
+      <a href="../../lab2/image-building/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../lab2/getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -509,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../genai-stack/" class="md-nav__link">
+      <a href="../../lab2/genai-stack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -534,19 +543,21 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -560,7 +571,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Lab 3 - Using Neo4j to store and manage knowledge graphs
@@ -574,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab3/intro/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,10 +603,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../lab3/cypher/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cypher Query Language
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -604,6 +633,93 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cypher-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cypher Syntax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cypher Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-nodes-and-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Nodes and Relationships
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querying-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Querying Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aggregation-and-ordering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aggregation and Ordering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combining-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combining Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1060,6 +1176,83 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cypher-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cypher Syntax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cypher Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-nodes-and-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Nodes and Relationships
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querying-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Querying Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aggregation-and-ordering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aggregation and Ordering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combining-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combining Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1076,9 +1269,69 @@
   
 
 
-  <h1>Compose best practices</h1>
+  <h1>Cypher Query Language</h1>
 
-
+<p>Cypher is a declarative graph query language that allows for efficient querying and updating of graph databases, such as those managed by Neo4j. It's designed to be intuitive and to closely resemble English, making it easier to express complex queries and manipulations of graph data. It uses an ASCII-art style syntax consisting of brackets, dashes and arrows.</p>
+<p><img alt="cypher" src="../cypher.png" /></p>
+<p>You can use Cypher to perform a variety of operations on a graph database, including:</p>
+<ul>
+<li><strong>Creating nodes and relationships</strong>: You can define new nodes and the relationships between them.</li>
+<li><strong>Querying data</strong>: Cypher allows you to retrieve nodes, relationships, and properties based on specific criteria.</li>
+<li><strong>Updating data</strong>: You can use Cypher to modify existing nodes and relationships, including adding or updating properties.</li>
+<li><strong>Deleting data</strong>: Nodes, relationships, and properties can be removed from the graph.</li>
+</ul>
+<p>Cypher queries typically involve specifying patterns that describe the shape of the data you're interested in. These patterns can include nodes, relationships, and the directions of those relationships.</p>
+<h2 id="cypher-syntax">Cypher Syntax<a class="headerlink" href="#cypher-syntax" title="Permanent link">&para;</a></h2>
+<p>Let's dive deeper into Cypher, providing some syntax examples and explanations for common operations you can perform on a graph database using this language.</p>
+<h3 id="creating-nodes-and-relationships">Creating Nodes and Relationships<a class="headerlink" href="#creating-nodes-and-relationships" title="Permanent link">&para;</a></h3>
+<p>To create a node, you use the <code>CREATE</code> statement. Nodes can have labels (which can be thought of as types or categories) and properties (key-value pairs).</p>
+<div class="highlight"><pre><span></span><code>CREATE (n:Person {name: &#39;Alice&#39;, age: 30})
+</code></pre></div>
+<p>This creates a node with the label <code>Person</code> and two properties: <code>name</code> with the value 'Alice' and <code>age</code> with the value 30.</p>
+<p>To create a relationship between two nodes, you also use the <code>CREATE</code> statement. Relationships have types and can also have properties.</p>
+<div class="highlight"><pre><span></span><code>CREATE (n:Person {name: &#39;Alice&#39;})-[:FRIEND_OF {since: 2021}]-&gt;(m:Person {name: &#39;Bob&#39;})
+</code></pre></div>
+<p>This creates two <code>Person</code> nodes and a <code>FRIEND_OF</code> relationship from Alice to Bob, with a property since indicating the year they became friends.</p>
+<h3 id="querying-data">Querying Data<a class="headerlink" href="#querying-data" title="Permanent link">&para;</a></h3>
+<p>To retrieve data, you use the <code>MATCH</code> statement, which allows you to specify patterns to find in the graph. You can also use <code>WHERE</code> to filter results, and <code>RETURN</code> to specify what to return.</p>
+<div class="highlight"><pre><span></span><code>MATCH (n:Person {name: &#39;Alice&#39;})
+RETURN n
+</code></pre></div>
+<p>This query looks for a <code>Person</code> node with the name 'Alice' and returns it.</p>
+<p>You can also query relationships:</p>
+<div class="highlight"><pre><span></span><code>MATCH (n:Person)-[r:FRIEND_OF]-&gt;(m:Person)
+WHERE n.name = &#39;Alice&#39;
+RETURN n, r, m
+</code></pre></div>
+<p>This finds <code>Person</code> nodes that are friends of Alice and returns the nodes and the relationships.</p>
+<h3 id="updating-data">Updating Data<a class="headerlink" href="#updating-data" title="Permanent link">&para;</a></h3>
+<p>To update data, you can use <code>SET</code> to add or change properties of nodes and relationships.</p>
+<div class="highlight"><pre><span></span><code>MATCH (n:Person {name: &#39;Alice&#39;})
+SET n.age = 31
+RETURN n
+</code></pre></div>
+<p>This updates Alice's age to 31.</p>
+<h3 id="deleting-data">Deleting Data<a class="headerlink" href="#deleting-data" title="Permanent link">&para;</a></h3>
+<p>To delete nodes and relationships, you use the <code>DELETE</code> statement.</p>
+<div class="highlight"><pre><span></span><code>MATCH (n:Person {name: &#39;Alice&#39;})
+DELETE n
+</code></pre></div>
+<p>This deletes the <code>Person</code> node with the name 'Alice'. Note that you must delete or detach all relationships of a node before you can delete the node itself.</p>
+<h3 id="aggregation-and-ordering">Aggregation and Ordering<a class="headerlink" href="#aggregation-and-ordering" title="Permanent link">&para;</a></h3>
+<p>Cypher supports aggregation functions similar to SQL, as well as ordering results.</p>
+<div class="highlight"><pre><span></span><code>MATCH (n:Person)
+RETURN n.age, COUNT(n) AS num_people
+ORDER BY n.age
+</code></pre></div>
+<p>This query returns the ages of all <code>Person</code> nodes and the count of people for each age, ordered by age.</p>
+<h3 id="combining-operations">Combining Operations<a class="headerlink" href="#combining-operations" title="Permanent link">&para;</a></h3>
+<p>You can combine these operations to perform complex queries and updates. For example, you might want to find all friends of Alice, increment their ages, and return the updated nodes:</p>
+<div class="highlight"><pre><span></span><code>MATCH (n:Person {name: &#39;Alice&#39;})-[:FRIEND_OF]-&gt;(friend:Person)
+SET friend.age = friend.age + 1
+RETURN friend
+</code></pre></div>
+<p>This finds all of Alice's friends, increments their ages by 1, and returns the updated friend nodes.</p>
+<p>Cypher's syntax and operations are designed to be intuitive for dealing with graph structures, making it easier to express complex queries involving nodes, relationships, and properties.</p>
 
 
 

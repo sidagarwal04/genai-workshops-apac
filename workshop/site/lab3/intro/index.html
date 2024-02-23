@@ -16,7 +16,7 @@
         <link rel="prev" href="../../lab2/genai-stack/">
       
       
-        <link rel="next" href="../running-neo4j-in-a-docker/">
+        <link rel="next" href="../cypher/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -74,6 +74,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-neo4j" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -587,6 +592,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Introduction to Neo4j and Knowledge Graphs
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -596,6 +612,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-neo4j" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Neo4j
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-knowledge-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Knowledge Graphs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationship-between-neo4j-and-knowledge-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationship between Neo4j and Knowledge Graphs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -609,32 +669,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../running-neo4j-in-a-docker/" class="md-nav__link">
+      <a href="../cypher/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Running Neo4j in a Docker container
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../neo4j-docker-extension/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Neo4j Docker Extension
+    Cypher Query Language
   </span>
   
 
@@ -1095,6 +1134,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-neo4j" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Neo4j
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-knowledge-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Knowledge Graphs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationship-between-neo4j-and-knowledge-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationship between Neo4j and Knowledge Graphs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1113,7 +1187,30 @@
 
   <h1>Introduction to Neo4j and Knowledge Graphs</h1>
 
-<p>Introduction to Neo4j</p>
+<h2 id="introduction-to-neo4j">Introduction to Neo4j<a class="headerlink" href="#introduction-to-neo4j" title="Permanent link">&para;</a></h2>
+<p><a href="https://neo4j.com/">Neo4j</a> is a highly popular graph database management system, designed for storing and querying interconnected data. Unlike traditional relational databases that store data in tables, Neo4j is based on graph theory, using nodes, relationships, and properties to represent and store data. The key components of Neo4j include:</p>
+<ul>
+<li>Nodes: Entities or objects such as people, businesses, accounts, or any item you want to track.</li>
+<li>Relationships: Connections between nodes, which can be directed and named and may carry properties. These relationships provide context and add richness to the data model.</li>
+<li>Properties: Key-value pairs that store data associated with nodes and relationships, allowing for the storage of detailed information about the entities in the graph.</li>
+</ul>
+<p><img alt="annotated_neo4j" src="../annotated_neo4j.png" /></p>
+<p>Neo4j is particularly well-suited for applications that require complex queries and analysis of connected data, such as social networks, recommendation engines, fraud detection, and more. Its Cypher query language is specially designed for querying graph data in an expressive and efficient manner.</p>
+<p>You can get started with Neo4j with <a href="www.neo4j.com/aura">AuraDB</a> and for more learning content check out Free, Self-Paced, Hands-on Online Training Courses at <a href="https://graphacademy.neo4j.com/">Neo4j GraphAcademy</a>.</p>
+<h2 id="introduction-to-knowledge-graphs">Introduction to Knowledge Graphs<a class="headerlink" href="#introduction-to-knowledge-graphs" title="Permanent link">&para;</a></h2>
+<p>Knowledge Graphs are a form of graph-based data representation that organize and integrate information in a way that makes it possible for computers to understand and interpret. They consist of nodes representing entities (such as people, places, concepts, and objects) and edges representing the relationships between these entities. Knowledge graphs are used to store interconnected descriptions of entities with free-form semantics, allowing for a dynamic and interconnected representation of knowledge.</p>
+<p><img alt="kg" src="../kg.png" /></p>
+<p>The power of knowledge graphs lies in their flexibility and the richness of the semantics they can capture, making them an essential tool for many applications, including:</p>
+<ul>
+<li>Semantic Search: Enhancing search capabilities by understanding the context and relationships between terms.</li>
+<li>Recommendation Systems: Offering personalized recommendations based on the interconnected nature of user interests and behavior.</li>
+<li>Natural Language Processing (NLP): Improving the understanding of human language by mapping out relationships and entities in text.</li>
+<li>Data Integration: Unifying data from multiple sources and formats, providing a holistic view of information.</li>
+</ul>
+<p>Knowledge graphs can be implemented using various storage technologies, including graph databases like Neo4j, which provides a robust platform for managing complex, connected data structures.</p>
+<h2 id="relationship-between-neo4j-and-knowledge-graphs">Relationship between Neo4j and Knowledge Graphs<a class="headerlink" href="#relationship-between-neo4j-and-knowledge-graphs" title="Permanent link">&para;</a></h2>
+<p>Neo4j can be used as the underlying database technology for building knowledge graphs. Its graph-based model aligns naturally with the structure of knowledge graphs, enabling efficient storage, querying, and management of interconnected data. By leveraging Neo4j, developers can create powerful applications that harness the full potential of knowledge graphs, from complex data analysis to AI-driven insights.</p>
+<p>In summary, Neo4j and Knowledge Graphs represent a powerful paradigm for managing and analyzing interconnected data. They offer a flexible and semantically rich way to model relationships and insights that are difficult to capture with traditional database systems, opening up new possibilities for understanding and leveraging data in various domains.</p>
 
 
 
