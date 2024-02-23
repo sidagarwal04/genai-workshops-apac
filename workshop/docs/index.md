@@ -2,6 +2,22 @@
 
 The GenAI Stack is a pre-configured, ready-to-code, and secure environment that makes it easy for developers to build and deploy GenAI applications.
 
+The GenAI Stack is a collaborative effort launched by Docker, Neo4j, LangChain, and Ollama at DockerCon 2023, aimed at streamlining the development of generative AI applications. This stack integrates several cutting-edge technologies to provide developers with a comprehensive toolkit for building AI-powered applications with ease.
+
+Key components of the GenAI Stack include:
+
+1. **Pre-configured Large Language Models (LLMs)**: The stack comes with pre-configured LLMs like Llama2, GPT-3.5, and GPT-4, enabling developers to kickstart their AI projects quickly.
+
+2. **Ollama Management**: Ollama facilitates the local management of open-source LLMs, streamlining the AI development process.
+
+3. **Neo4j as the Default Database**: Neo4j serves as the stack's default database, offering advanced graph and vector search capabilities. This enhances the speed and accuracy of AI/ML models by uncovering complex data patterns and relationships. Additionally, Neo4j acts as a long-term memory for these models, supporting more precise GenAI predictions and outcomes with its knowledge graphs.
+
+4. **LangChain Orchestration**: LangChain provides a framework for applications powered by LLMs, facilitating communication between the LLM, the application, and the database. It includes LangSmith for debugging, testing, evaluating, and monitoring LLM applications.
+
+5. **Comprehensive Support**: Docker and its partners offer a variety of tools, code templates, how-to guides, and best practices to support developers in their GenAI journey.
+
+The [GenAI Stack](https://neo4j.com/labs/genai-ecosystem/genai-stack/) is designed to make AI/ML integration more accessible to developers, offering a ready-to-code and secure environment. By bringing together these technologies, the stack eliminates the need for developers to search for, assemble, and configure disparate technologies from different sources. The stack is available in Early Access and can be accessed from the Docker Desktop Learning Center or directly on [GitHub](https://github.com/docker/genai-stack).
+
 Gen-AI Stack Workshops are a series of workshops designed to teach developers how to build and deploy GenAI applications using the GenAI Stack. These workshops are ideal for developers who are interested in learning more about GenAI or who are looking for a hands-on introduction to the GenAI Stack.
 
 These hands-on labs will be a combination of theory and practical exercises.
@@ -13,7 +29,7 @@ The source code for this workshop is available [here](https://github.com/sidagar
 ## Co-Authors
 
 - [Ajeet Singh Raina](https://www.linkedin.com/in/ajeetsraina/) - DevRel @[Docker](https://docker.com)
-- [Siddhant Agarwal](https://www.linkedin.com/in/sidagarwal04) - Tech Community Manager @[Neo4j](https://neo4j.com)
+- [Siddhant Agarwal](https://www.linkedin.com/in/sidagarwal04) - Developer Relations APAC @[Neo4j](https://neo4j.com)
 
 ## Benefits of GenAI Stack Workshop
 
