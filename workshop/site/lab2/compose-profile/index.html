@@ -10,16 +10,20 @@
         <meta name="author" content="GenAI Developers">
       
       
-        <link rel="canonical" href="https://genai-workshop.neo4j.com/lab1/genai-stack/">
+        <link rel="canonical" href="https://genai-workshop.neo4j.com/lab2/compose-profile/">
       
       
+        <link rel="prev" href="../compose-watch/">
+      
+      
+        <link rel="next" href="../../lab3/intro/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.15">
     
     
       
-        <title>Genai stack - GenAI Stack Workshop</title>
+        <title>Overview of Compose Profile - GenAI Stack Workshop</title>
       
     
     
@@ -70,6 +74,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#compose-profile" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -101,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Genai stack
+              Overview of Compose Profile
             
           </span>
         </div>
@@ -268,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../lab1/overview/" class="md-nav__link">
         Overview of GenAI
       </a>
     </li>
@@ -282,7 +291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../challenges/" class="md-nav__link">
+      <a href="../../lab1/challenges/" class="md-nav__link">
         Current Challenges
       </a>
     </li>
@@ -296,7 +305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../solution/" class="md-nav__link">
+      <a href="../../lab1/solution/" class="md-nav__link">
         What problem does it solve
       </a>
     </li>
@@ -316,14 +325,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
       
       
       
@@ -332,7 +343,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Lab 2 - Using Docker to containerize and deploy GenAI applications
@@ -345,7 +356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/what-is-docker/" class="md-nav__link">
+      <a href="../what-is-docker/" class="md-nav__link">
         What is Docker
       </a>
     </li>
@@ -359,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/inner-loop-developer/" class="md-nav__link">
+      <a href="../inner-loop-developer/" class="md-nav__link">
         Inner-loop Developer Workflow
       </a>
     </li>
@@ -373,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/docker-developer-workflow/" class="md-nav__link">
+      <a href="../docker-developer-workflow/" class="md-nav__link">
         Docker Developer Workflow
       </a>
     </li>
@@ -387,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/image-building/" class="md-nav__link">
+      <a href="../image-building/" class="md-nav__link">
         Docker Image Building and Best Practices
       </a>
     </li>
@@ -401,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         Getting Started with Docker Init
       </a>
     </li>
@@ -415,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/compose-watch/" class="md-nav__link">
+      <a href="../compose-watch/" class="md-nav__link">
         Overview of Compose Watch
       </a>
     </li>
@@ -427,11 +438,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../lab2/compose-profile/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Overview of Compose Profile
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Overview of Compose Profile
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clone-the-repository" class="md-nav__link">
+    Clone the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-directory-to-python-project" class="md-nav__link">
+    Change directory to Python project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-the-compose-services" class="md-nav__link">
+    Start the Compose services
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -838,6 +904,37 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clone-the-repository" class="md-nav__link">
+    Clone the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-directory-to-python-project" class="md-nav__link">
+    Change directory to Python project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-the-compose-services" class="md-nav__link">
+    Start the Compose services
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -855,9 +952,19 @@
   
 
 
-  <h1>Genai stack</h1>
-
-
+<h1 id="compose-profile">Compose Profile<a class="headerlink" href="#compose-profile" title="Permanent link">&para;</a></h1>
+<h2 id="clone-the-repository">Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code> git clone https://github.com/dockersamples/docker-init-demos/
+</code></pre></div>
+<h2 id="change-directory-to-python-project">Change directory to Python project<a class="headerlink" href="#change-directory-to-python-project" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code> cd docker-init-demos/python/compose-watch/sample
+</code></pre></div>
+<h2 id="start-the-compose-services">Start the Compose services<a class="headerlink" href="#start-the-compose-services" title="Permanent link">&para;</a></h2>
+<p>Ensuring that you have stopped old compose services so as not to conflict between the listening ports</p>
+<div class="highlight"><pre><span></span><code> docker compose --profile dev --file compose-profile.yaml up -d
+</code></pre></div>
+<p>The command will start just 2 services - Python and database.</p>
+<p>Change dev to prod, and see if it starts all the listed services</p>
 
 
   

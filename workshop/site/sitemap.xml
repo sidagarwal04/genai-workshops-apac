@@ -41,12 +41,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://genai-workshop.neo4j.com/lab2/docker-developer-workflow/</loc>
+         <loc>https://genai-workshop.neo4j.com/lab2/compose-profile/</loc>
          <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://genai-workshop.neo4j.com/lab2/genai-stack/</loc>
+         <loc>https://genai-workshop.neo4j.com/lab2/compose-watch/</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://genai-workshop.neo4j.com/lab2/docker-developer-workflow/</loc>
          <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -132,6 +137,11 @@
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab5/ollama/</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://genai-workshop.neo4j.com/lab6/genai-stack/</loc>
          <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>

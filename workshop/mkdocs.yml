@@ -31,7 +31,8 @@ nav:
     - Docker Developer Workflow: lab2/docker-developer-workflow.md
     - Docker Image Building and Best Practices: lab2/image-building.md
     - Getting Started with Docker Init: lab2/getting-started.md
-    - Getting Started with Sample GenAI App: lab2/genai-stack.md 
+    - Overview of Compose Watch: lab2/compose-watch.md
+    - Overview of Compose Profile: lab2/compose-profile.md
 
   - Lab 3 - Using Neo4j to store and manage knowledge graphs:
     - Introduction to Neo4j and Knowledge Graphs: lab3/intro.md
@@ -54,6 +55,7 @@ nav:
     - Best Practices: lab5/getting-started.md
 
   - Lab 6 - Gen-AI Stack - Let’s bring it together:
+    - Getting Started with Sample GenAI App: lab6/genai-stack.md
     - Using Docker Compose: lab6/using-docker-compose.md
     - Troubleshooting: lab6/troubleshooting.md
     - Upcoming Feature: lab6/upcoming-feature.md

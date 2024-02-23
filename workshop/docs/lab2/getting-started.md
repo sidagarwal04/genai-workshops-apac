@@ -21,8 +21,8 @@ This code defines a handler that responds to GET requests with the specified tex
 Those commands will start a http server listening on port `8080` 
 and if your request `http://localhost:8080` you'll see the following output: 
 
-```shell
-❯ curl http://localhost:8080
+```
+curl http://localhost:8080
 
           ##         .
     ## ## ##        ==
@@ -35,6 +35,7 @@ and if your request `http://localhost:8080` you'll see the following output:
 
 
 Hello from Docker!
+
 ```
 
 
@@ -85,7 +86,7 @@ services:
  
  ## Accessing the Python app
  
- ```
+```
 curl localhost:8080
 
           ##         .

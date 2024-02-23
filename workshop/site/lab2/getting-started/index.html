@@ -16,7 +16,7 @@
         <link rel="prev" href="../image-building/">
       
       
-        <link rel="next" href="../genai-stack/">
+        <link rel="next" href="../compose-watch/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.15">
@@ -511,8 +511,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../genai-stack/" class="md-nav__link">
-        Getting Started with Sample GenAI App
+      <a href="../compose-watch/" class="md-nav__link">
+        Overview of Compose Watch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compose-profile/" class="md-nav__link">
+        Overview of Compose Profile
       </a>
     </li>
   
@@ -847,6 +861,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lab6/genai-stack/" class="md-nav__link">
+        Getting Started with Sample GenAI App
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lab6/using-docker-compose/" class="md-nav__link">
         Using Docker Compose
       </a>
@@ -998,19 +1026,19 @@
 <p>This code defines a handler that responds to GET requests with the specified text and starts an HTTP server listening on port 8080. When you run the script, you can access the server at http://localhost:8080 and see the same message as the Python program.</p>
 <p>Those commands will start a http server listening on port <code>8080</code> 
 and if your request <code>http://localhost:8080</code> you'll see the following output: </p>
-<div class="highlight"><pre><span></span><code>❯<span class="w"> </span>curl<span class="w"> </span>http://localhost:8080
+<div class="highlight"><pre><span></span><code>curl http://localhost:8080
 
-<span class="w">          </span><span class="c1">##         .</span>
-<span class="w">    </span><span class="c1">## ## ##        ==</span>
-<span class="w"> </span><span class="c1">## ## ## ## ##    ===</span>
-/<span class="s2">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;\___/ ===</span>
-<span class="s2">{                       /  ===-</span>
-<span class="s2">\______ O           __/</span>
-<span class="s2"> \    \         __/</span>
-<span class="s2">  \____\_______/</span>
+          ##         .
+    ## ## ##        ==
+ ## ## ## ## ##    ===
+/&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;\___/ ===
+{                       /  ===-
+\______ O           __/
+ \    \         __/
+  \____\_______/
 
 
-<span class="s2">Hello from Docker!</span>
+Hello from Docker!
 </code></pre></div>
 <h2 id="using-docker-init">Using Docker init<a class="headerlink" href="#using-docker-init" title="Permanent link">&para;</a></h2>
 <h3 id="run-the-following-command">Run the following command:<a class="headerlink" href="#run-the-following-command" title="Permanent link">&para;</a></h3>
@@ -1041,19 +1069,20 @@ services:
 <div class="highlight"><pre><span></span><code> docker compose up -d --build
 </code></pre></div>
 <p>## Accessing the Python app</p>
-<p>```
-curl localhost:8080</p>
-<div class="highlight"><pre><span></span><code>      ##         .
-## ## ##        ==
-</code></pre></div>
-<p>## ## ## ## ##    ===
-/"""""""""""""""""_<strong>/ ===
+<div class="highlight"><pre><span></span><code>curl localhost:8080
+
+          ##         .
+    ## ## ##        ==
+ ## ## ## ## ##    ===
+/&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;\___/ ===
 {                       /  ===-
-____</strong> O           <strong>/
-              __/
-  __</strong>_______/</p>
-<p>Hello from Docker!
-```</p>
+\______ O           __/
+ \    \         __/
+  \____\_______/
+
+
+Hello from Docker!
+</code></pre></div>
 
 
   
