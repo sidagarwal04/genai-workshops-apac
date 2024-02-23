@@ -48,6 +48,7 @@ nav:
     - Best Practices: lab4/best-practices.md
 
   - Lab 5 - Using Ollama to train and deploy large language models:
+    - Introduction to Ollama: lab5/intro-to-ollama.md
     - Current Challenges: lab5/challenges.md
     - Getting Started: lab5/getting-started.md
     - Running Ollama in a Docker container: lab5/ollama.md

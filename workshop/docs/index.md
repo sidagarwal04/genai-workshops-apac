@@ -24,21 +24,21 @@ These hands-on labs will be a combination of theory and practical exercises.
 
 ## GitHub Sources
 
-The source code for this workshop is available [here](https://github.com/sidagarwal04/genai-workshops-apac)
+The source code for this workshop is available [here](https://github.com/sidagarwal04/genai-workshops-apac).
 
 ## Co-Authors
 
 - [Ajeet Singh Raina](https://www.linkedin.com/in/ajeetsraina/) - DevRel @[Docker](https://docker.com)
 - [Siddhant Agarwal](https://www.linkedin.com/in/sidagarwal04) - Developer Relations APAC @[Neo4j](https://neo4j.com)
 
-## Benefits of GenAI Stack Workshop
+## Benefits of this GenAI Stack Workshop
 
 - [Learn about GenAI and why it is important](lab1/overview/)
-- Learn how to use the GenAI Stack to build and deploy GenAI applications
-- Learn how to use Docker to containerize and deploy GenAI applications
-- Learn how to use Neo4j to store and manage knowledge graphs
-- Learn how to use LangChain to generate text, translate languages, and write different kinds of creative content
-- Learn how to use Ollama to train and deploy large language models
+- [Learn how to use Docker to containerize and deploy GenAI applications](lab2/what-is-docker/)
+- [Learn how to use Neo4j to store and manage knowledge graphs](lab3/intro/)
+- [Learn how to use LangChain to generate text, translate languages, and write different kinds of creative content](lab4/intro/)
+- [Learn how to use Ollama to train and deploy large language models](lab5/intro-to-ollama/)
+- [Learn how to use the GenAI Stack to build and deploy GenAI applications](lab6/using-docker-compose/)
 - Get hands-on experience with the GenAI Stack
 - Network with other GenAI developers and trainers
 
