@@ -10,13 +10,13 @@
         <meta name="author" content="GenAI Developers">
       
       
-        <link rel="canonical" href="https://genai-workshop.neo4j.com/lab5/ollama/">
+        <link rel="canonical" href="https://genai-workshop.neo4j.com/lab4/llms-intro/">
       
       
-        <link rel="prev" href="../getting-started/">
+        <link rel="prev" href="../../lab3/cypher/">
       
       
-        <link rel="next" href="../getting-started/">
+        <link rel="next" href="../intro/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Running Ollama in a Docker container - GenAI Stack Workshop</title>
+        <title>Introduction to LLMs - GenAI Stack Workshop</title>
       
     
     
@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#instructing-an-llm" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Running Ollama in a Docker container
+              Introduction to LLMs
             
           </span>
         </div>
@@ -624,19 +629,21 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -650,7 +657,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Lab 4 - Using LangChain to integrate LLMs into Gen-AI applications
@@ -661,10 +668,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../lab4/llms-intro/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Introduction to LLMs
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -673,6 +698,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instructing-an-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructing an LLM
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -685,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab4/intro/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -706,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab4/getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -727,7 +779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab4/best-practices/" class="md-nav__link">
+      <a href="../best-practices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -752,21 +804,19 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -780,7 +830,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Lab 5 - Using Ollama to train and deploy large language models
@@ -794,7 +844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro-to-ollama/" class="md-nav__link">
+      <a href="../../lab5/intro-to-ollama/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -815,7 +865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../challenges/" class="md-nav__link">
+      <a href="../../lab5/challenges/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../lab5/getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -854,17 +904,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../lab5/ollama/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -873,7 +916,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -886,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../lab5/getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1095,6 +1137,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instructing-an-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructing an LLM
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1111,9 +1170,29 @@
   
 
 
-  <h1>Running Ollama in a Docker container</h1>
+  <h1>Introduction to LLMs</h1>
 
-
+<p>Large Language Models, referred to as LLMs, learn the underlying structure and distribution of the data and can then generate new samples that resemble the original data.</p>
+<p>LLMs are trained on vast amounts of text data to understand and generate human-like text. LLMs can answer questions, create content, and assist with various linguistic tasks by leveraging patterns learned from the data.</p>
+<p>Generative AI is a class of algorithms and models that can generate new content, such as images, text, or even music. New content is generated based on user prompting, existing patterns, and examples from existing data.</p>
+<h2 id="instructing-an-llm">Instructing an LLM<a class="headerlink" href="#instructing-an-llm" title="Permanent link">&para;</a></h2>
+<p>The response generated by an LLM is a probabilistic continuation of the instructions it receives. The LLM provides the most likely response based on the patterns it has learned from its training data.</p>
+<p>In simple terms, if presented with the prompt "<em>Continue this sequence - A B C</em>", an LLM could respond "<em>D E F</em>".</p>
+<p>To get an LLM to perform a task, you provide a <strong>prompt</strong>, a piece of text that should specify your requirements and provide clear instructions on how to respond.</p>
+<p><img alt="llm-interaction" src="../llm-prompt-interaction.svg" /></p>
+<p>Precision in the task description, potentially combined with examples or context, ensures that the model understands the intent and produces relevant and accurate outputs.</p>
+<p>An example prompt may be a simple question.</p>
+<div class="highlight"><pre><span></span><code>What is the capital of Japan?
+</code></pre></div>
+<p>Or, it could be more descriptive. For example:</p>
+<div class="highlight"><pre><span></span><code>Tell me about the capital of Japan.
+Produce a brief list of talking points exploring its culture and history.
+The content should be targeted at tourists.
+Your readers may have English as a second language, so use simple terms and avoid colloquialisms.
+Avoid Jargon at all costs.
+Return the results as a list of JSON strings containing content formatted in Markdown.
+</code></pre></div>
+<p>The LLM will interpret these instructions and return a response based on the patterns it has learned from its training data.</p>
 
 
 

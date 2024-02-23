@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://genai-workshop.neo4j.com/lab4/getting-started/">
       
       
-        <link rel="prev" href="../challenges/">
+        <link rel="prev" href="../intro/">
       
       
         <link rel="next" href="../best-practices/">
@@ -74,6 +74,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#prerequisites" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -557,7 +562,7 @@
             
   
   <span class="md-ellipsis">
-    Lab 3 - Using Neo4j to store and manage knowledge graphs
+    Lab 3 - Using Neo4j to store and manage data in the form of knowledge graphs
   </span>
   
 
@@ -567,7 +572,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Lab 3 - Using Neo4j to store and manage knowledge graphs
+            Lab 3 - Using Neo4j to store and manage data in the form of knowledge graphs
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -645,7 +650,7 @@
             
   
   <span class="md-ellipsis">
-    Lab 4 - Using LangChain to generate text, translate languages, and write different kinds of creative content
+    Lab 4 - Using LangChain to integrate LLMs into Gen-AI applications
   </span>
   
 
@@ -655,7 +660,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Lab 4 - Using LangChain to generate text, translate languages, and write different kinds of creative content
+            Lab 4 - Using LangChain to integrate LLMs into Gen-AI applications
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -666,7 +671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+      <a href="../llms-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -687,53 +692,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../rag/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Introduction to RAG
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../kgvector/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Why KG+Vector are better for RAG
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../challenges/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Current Challenges
+    Introduction to Langchain
   </span>
   
 
@@ -757,6 +720,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -766,6 +740,173 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-environment-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Environment Setup:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-install-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Install LangChain:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. API Keys:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-langchain-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. LangChain Settings:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploring-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exploring LangChain
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploring LangChain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Documentation:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-tutorials-and-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Tutorials and Examples:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-with-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building with LangChain
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building with LangChain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-start-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Start Coding:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-explore-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Explore Modules:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-develop-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Develop Applications:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -993,6 +1134,69 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lab6/llms-hallucination/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLMs Hallucinations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab6/rag/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to RAG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab6/kgvector/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Why KG+Vector are better for RAG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lab6/using-docker-compose/" class="md-nav__link">
         
   
@@ -1074,6 +1278,164 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-environment-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Environment Setup:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-install-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Install LangChain:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. API Keys:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-langchain-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. LangChain Settings:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploring-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exploring LangChain
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploring LangChain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Documentation:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-tutorials-and-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Tutorials and Examples:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-with-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building with LangChain
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building with LangChain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-start-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Start Coding:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-explore-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Explore Modules:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-develop-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Develop Applications:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1092,7 +1454,59 @@
 
   <h1>Getting Started</h1>
 
-
+<p>Getting started with LangChain involves a few key steps that allow developers to begin integrating Large Language Models (LLMs) into their applications. Below is a guide to help you get started with LangChain:</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p>Before diving into LangChain, ensure you have the following:</p>
+<ul>
+<li>A working knowledge of Python, as LangChain is heavily Python-based.</li>
+<li>Familiarity with virtual environments in Python for package management (e.g., <code>venv</code> or <code>conda</code>).</li>
+<li>An understanding of LLMs and how they operate, at least at a high level.</li>
+</ul>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<h3 id="1-environment-setup">1. Environment Setup:<a class="headerlink" href="#1-environment-setup" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Create a new virtual environment to keep your dependencies organized and project-specific.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>python -m venv langchain-env
+source langchain-env/bin/activate  # On Windows, use `langchain-env\Scripts\activate`
+</code></pre></div>
+<h3 id="2-install-langchain">2. Install LangChain:<a class="headerlink" href="#2-install-langchain" title="Permanent link">&para;</a></h3>
+<ul>
+<li>With your environment activated, use <code>pip</code> to install LangChain.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>pip install langchain
+</code></pre></div>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<h3 id="1-api-keys">1. API Keys:<a class="headerlink" href="#1-api-keys" title="Permanent link">&para;</a></h3>
+<ul>
+<li>If you plan to use third-party LLMs like OpenAI's GPT, make sure to sign up for access and retrieve your API keys.</li>
+</ul>
+<h3 id="2-langchain-settings">2. LangChain Settings:<a class="headerlink" href="#2-langchain-settings" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Set up your LangChain configuration file (langchain.config) with the necessary API keys and default settings.</li>
+</ul>
+<h2 id="exploring-langchain">Exploring LangChain<a class="headerlink" href="#exploring-langchain" title="Permanent link">&para;</a></h2>
+<h3 id="1-documentation">1. Documentation:<a class="headerlink" href="#1-documentation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Familiarize yourself with the LangChain documentation. This will give you an overview of the capabilities and modules available.</li>
+</ul>
+<h3 id="2-tutorials-and-examples">2. Tutorials and Examples:<a class="headerlink" href="#2-tutorials-and-examples" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Walk through any tutorials provided in the documentation or GitHub repository. These examples can give you a hands-on understanding of how to use LangChain.</li>
+</ul>
+<h2 id="building-with-langchain">Building with LangChain<a class="headerlink" href="#building-with-langchain" title="Permanent link">&para;</a></h2>
+<h3 id="1-start-coding">1. Start Coding:<a class="headerlink" href="#1-start-coding" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Begin by writing simple scripts to interact with LLMs using LangChain. Experiment with sending prompts and processing responses.</li>
+</ul>
+<h3 id="2-explore-modules">2. Explore Modules:<a class="headerlink" href="#2-explore-modules" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use LangChain modules to handle specific tasks like document loaders, utilities, and agents. These modules can simplify complex tasks.</li>
+</ul>
+<h3 id="3-develop-applications">3. Develop Applications:<a class="headerlink" href="#3-develop-applications" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Start integrating LangChain into your applications. You can create chatbots, automate document analysis, or develop other innovative solutions.</li>
+</ul>
 
 
 

@@ -32,6 +32,19 @@ Knowledge graphs can be implemented using various storage technologies, includin
 
 ## Relationship between Neo4j and Knowledge Graphs
 
+Knowledge graphs are a specific implementation of a Graph Database, where information is captured and integrated from many different sources, representing the inherent knowledge of a particular domain.
+
+They provide a structured way to represent entities, their attributes, and their relationships, allowing for a comprehensive and interconnected understanding of the information within that domain.
+
+Knowledge graphs break down sources of information and integrate them, allowing you to see the relationships between the data.
+
+![kg](generic-knowledge-graph.svg)
+
+
+You can tailor knowledge graphs for semantic search, data retrieval, and reasoning.
+
+You may not be familiar with the term knowledge graph, but you have probably used one. Search engines typically use knowledge graphs to provide information about people, places, and things.
+
 Neo4j can be used as the underlying database technology for building knowledge graphs. Its graph-based model aligns naturally with the structure of knowledge graphs, enabling efficient storage, querying, and management of interconnected data. By leveraging Neo4j, developers can create powerful applications that harness the full potential of knowledge graphs, from complex data analysis to AI-driven insights.
 
 In summary, Neo4j and Knowledge Graphs represent a powerful paradigm for managing and analyzing interconnected data. They offer a flexible and semantically rich way to model relationships and insights that are difficult to capture with traditional database systems, opening up new possibilities for understanding and leveraging data in various domains.

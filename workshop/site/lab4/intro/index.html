@@ -13,10 +13,10 @@
         <link rel="canonical" href="https://genai-workshop.neo4j.com/lab4/intro/">
       
       
-        <link rel="prev" href="../../lab3/cypher/">
+        <link rel="prev" href="../llms-intro/">
       
       
-        <link rel="next" href="../rag/">
+        <link rel="next" href="../getting-started/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Introduction to LLMs - GenAI Stack Workshop</title>
+        <title>Introduction to Langchain - GenAI Stack Workshop</title>
       
     
     
@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#what-is-langchain" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction to LLMs
+              Introduction to Langchain
             
           </span>
         </div>
@@ -557,7 +562,7 @@
             
   
   <span class="md-ellipsis">
-    Lab 3 - Using Neo4j to store and manage knowledge graphs
+    Lab 3 - Using Neo4j to store and manage data in the form of knowledge graphs
   </span>
   
 
@@ -567,7 +572,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Lab 3 - Using Neo4j to store and manage knowledge graphs
+            Lab 3 - Using Neo4j to store and manage data in the form of knowledge graphs
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -645,7 +650,7 @@
             
   
   <span class="md-ellipsis">
-    Lab 4 - Using LangChain to generate text, translate languages, and write different kinds of creative content
+    Lab 4 - Using LangChain to integrate LLMs into Gen-AI applications
   </span>
   
 
@@ -655,9 +660,30 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Lab 4 - Using LangChain to generate text, translate languages, and write different kinds of creative content
+            Lab 4 - Using LangChain to integrate LLMs into Gen-AI applications
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../llms-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to LLMs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -673,79 +699,95 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Introduction to Langchain
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Introduction to LLMs
+    Introduction to Langchain
   </span>
   
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../rag/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    Introduction to RAG
-  </span>
-  
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../kgvector/" class="md-nav__link">
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is LangChain?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is LangChain?">
+      <ul class="md-nav__list">
         
+          <li class="md-nav__item">
+  <a href="#the-significance-of-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Significance of LangChain
+    </span>
+  </a>
   
-  <span class="md-ellipsis">
-    Why KG+Vector are better for RAG
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../challenges/" class="md-nav__link">
+</li>
         
+          <li class="md-nav__item">
+  <a href="#how-does-it-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How does it work?
+    </span>
+  </a>
   
-  <span class="md-ellipsis">
-    Current Challenges
-  </span>
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features-and-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features and Capabilities
+    </span>
+  </a>
   
-
-      </a>
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practical-applications-of-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Applications of LangChain
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -993,6 +1035,69 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lab6/llms-hallucination/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLMs Hallucinations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab6/rag/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to RAG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab6/kgvector/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Why KG+Vector are better for RAG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lab6/using-docker-compose/" class="md-nav__link">
         
   
@@ -1074,6 +1179,65 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is LangChain?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is LangChain?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-significance-of-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Significance of LangChain
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-it-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How does it work?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features-and-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features and Capabilities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practical-applications-of-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Applications of LangChain
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1090,9 +1254,39 @@
   
 
 
-  <h1>Introduction to LLMs</h1>
+  <h1>Introduction to Langchain</h1>
 
-
+<p>In an era where artificial intelligence (AI) is reshaping industries, Large Language Models (LLMs) stand at the forefront, driving innovation and creativity. However, harnessing their full potential remains a challenge for developers and businesses alike. Enter LangChain, a cutting-edge framework designed to bridge this gap. LangChain is the key to unlocking the vast capabilities of LLMs, making it easier than ever to integrate advanced AI functionalities into applications.</p>
+<h2 id="what-is-langchain">What is LangChain?<a class="headerlink" href="#what-is-langchain" title="Permanent link">&para;</a></h2>
+<p>LangChain is an open-source framework that democratizes access to the capabilities of Large Language Models. It is designed to streamline the development of applications ranging from document analysis and summarization to sophisticated chatbots and intricate code analysis. LangChain acts as a conduit between the complex world of LLMs and practical, real-world applications, providing developers with the tools and APIs necessary to integrate AI functionalities seamlessly. Whether you're working with Python or Javascript, LangChain offers the flexibility and resources needed to innovate and excel.</p>
+<h3 id="the-significance-of-langchain">The Significance of LangChain<a class="headerlink" href="#the-significance-of-langchain" title="Permanent link">&para;</a></h3>
+<p>Integrating LLMs into applications can be daunting due to their complexity and the technical expertise required. LangChain emerges as a solution to this challenge, simplifying the development process and making it accessible to a broader range of developers. By providing orchestration tools and APIs, LangChain allows developers to focus on the creative aspects of application development, reducing the technical hurdles associated with LLM integration. This democratization of AI tools paves the way for more innovative, efficient, and intelligent applications, transforming how we interact with technology.</p>
+<p><img alt="langchain" src="../langchain.jpg" /></p>
+<p>Source: <a href="https://www.kdnuggets.com/2023/04/langchain-101-build-gptpowered-applications.html">https://www.kdnuggets.com/2023/04/langchain-101-build-gptpowered-applications.html</a></p>
+<h3 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link">&para;</a></h3>
+<p>LangChain applications bridge users and LLMs, communicating back and forth with the LLM through <strong>Chains</strong>.</p>
+<p>The key components of a Langchain application are:</p>
+<ul>
+<li>
+<p><strong>Model Interaction (Model I/O)</strong>: Components that manage the interaction with the language model, overseeing tasks like feeding inputs and extracting outputs.</p>
+</li>
+<li>
+<p><strong>Data Connection and Retrieval</strong>: Retrieval components can access, transform, and store data, allowing for efficient queries and retrieval.</p>
+</li>
+<li>
+<p><strong>Chains</strong>: Chains are reusable components that determine the best way to fulfill an instruction based on a prompt.</p>
+</li>
+<li>
+<p><strong>Agents</strong>: Agents orchestrate commands directed at LLMs and other tools, enabling them to perform specific tasks or solve designated problems.</p>
+</li>
+<li>
+<p><strong>Memory</strong>: Allow applications to retain context, for example, remembering the previous messages in a conversation.</p>
+</li>
+</ul>
+<h3 id="features-and-capabilities">Features and Capabilities<a class="headerlink" href="#features-and-capabilities" title="Permanent link">&para;</a></h3>
+<p>LangChain is packed with features that cater to the diverse needs of developers. Its support for both Python and Javascript libraries means that developers can work in their preferred programming environment. LangChain's flexibility extends to a wide range of applications, from automating mundane tasks with chatbots to providing insightful analyses of large datasets. Its intuitive API and comprehensive documentation ensure that even those new to LLMs can start building sophisticated applications quickly. LangChain is not just a tool but a partner in innovation, offering scalability, ease of use, and a community of support.</p>
+<h3 id="practical-applications-of-langchain">Practical Applications of LangChain<a class="headerlink" href="#practical-applications-of-langchain" title="Permanent link">&para;</a></h3>
+<p>The potential applications for LangChain are as vast as the imagination. In customer service, chatbots powered by LangChain can handle inquiries with unprecedented accuracy and nuance, improving user experience. For businesses drowning in data, LangChain can automate document analysis, extracting key insights and summarizing information efficiently. Developers can leverage LangChain for code analysis, enhancing productivity and code quality. These examples barely scratch the surface of what's possible, illustrating LangChain's role as a catalyst for AI-driven solutions across industries.</p>
 
 
 

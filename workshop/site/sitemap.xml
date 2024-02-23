@@ -101,11 +101,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://genai-workshop.neo4j.com/lab4/challenges/</loc>
-         <lastmod>2024-02-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://genai-workshop.neo4j.com/lab4/getting-started/</loc>
          <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
@@ -116,7 +111,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://genai-workshop.neo4j.com/lab4/kgvector/</loc>
+         <loc>https://genai-workshop.neo4j.com/lab4/llms-intro/</loc>
          <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -142,6 +137,21 @@
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab5/ollama/</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://genai-workshop.neo4j.com/lab6/kgvector/</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://genai-workshop.neo4j.com/lab6/llms-hallucination/</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://genai-workshop.neo4j.com/lab6/rag/</loc>
          <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
