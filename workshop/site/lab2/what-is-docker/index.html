@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://genai-workshop.neo4j.com/lab2/what-is-docker/">
       
       
-        <link rel="prev" href="../../lab1/best-practices/">
+        <link rel="prev" href="../../lab1/solution/">
       
       
         <link rel="next" href="../inner-loop-developer/">
@@ -73,6 +73,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#overview-of-docker-desktop" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -308,34 +313,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab1/getting-started/" class="md-nav__link">
-        Getting Started
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab1/best-practices/" class="md-nav__link">
-        Best Practices
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -386,9 +363,66 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          What is Docker
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         What is Docker
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview-of-docker-desktop" class="md-nav__link">
+    Overview of Docker Desktop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-is-focused-on-developer-success" class="md-nav__link">
+    Docker is focused on Developer Success
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speed" class="md-nav__link">
+    Speed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    Security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choice" class="md-nav__link">
+    Choice
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -443,8 +477,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../microservices/" class="md-nav__link">
-        Building Microservices using Docker Compose
+      <a href="../getting-started/" class="md-nav__link">
+        Getting Started with Docker Init
       </a>
     </li>
   
@@ -457,8 +491,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../compose-best-practices/" class="md-nav__link">
-        Compose Best Practices
+      <a href="../genai-stack/" class="md-nav__link">
+        Getting Started with Sample GenAI App
       </a>
     </li>
   
@@ -853,6 +887,49 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview-of-docker-desktop" class="md-nav__link">
+    Overview of Docker Desktop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-is-focused-on-developer-success" class="md-nav__link">
+    Docker is focused on Developer Success
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speed" class="md-nav__link">
+    Speed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    Security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choice" class="md-nav__link">
+    Choice
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -871,7 +948,21 @@
 
   <h1>What is Docker</h1>
 
-
+<p>Developing apps today requires so much more than writing code. Multiple languages, frameworks, architectures, and discontinuous interfaces between tools for each lifecycle stage creates enormous complexity. Docker simplifies and accelerates your workflow, while giving developers the freedom to innovate with their choice of tools, application stacks, and deployment environments for each project.</p>
+<p>In 2013, Docker introduced what would become the industry standard for containers. Containers are a standardized unit of software that allows developers to isolate their app from its environment, solving the “it works on my machine” headache. For millions of developers today, Docker is the de facto standard to build and share containerized apps – from desktop, to the cloud. We are building on our unique connected experience from code to cloud for developers and developer teams.</p>
+<p>Docker has been around for over 10-years. We started in the container space focused on making it easier for organizations to modernize with container technology. Over the years we have evolved our initial offering to meet the needs of modern developers, focusing on enabling developers to build container based applications locally. </p>
+<h2 id="overview-of-docker-desktop">Overview of Docker Desktop<a class="headerlink" href="#overview-of-docker-desktop" title="Permanent link">&para;</a></h2>
+<p>Docker Desktop is the easiest way for developers using containers in production to edit, run, test, and share containerized apps locally on Linux, Windows, and macOS machines. Docker Desktop works out-of-the-box — meaning it comes with the entire environment needed to develop and run Linux, Windows, and macOS containers locally (on the developer’s laptop). Docker Desktop also handles many of the tedious and complex tasks associated with setting up containers. This allows developers to continue focusing on what they love and do best — writing code — instead of spending hours setting up and maintaining Docker locally (i.e., updating the VM, networking, and file sharing mapping between the host and the VM and all the tooling needed to run Docker locally). </p>
+<h2 id="docker-is-focused-on-developer-success">Docker is focused on Developer Success<a class="headerlink" href="#docker-is-focused-on-developer-success" title="Permanent link">&para;</a></h2>
+<p>Docker Desktop is a powerful tool designed to simplify and streamline the development and deployment of applications using Docker containers. Let's break down the key points mentioned in the description:</p>
+<p><img alt="dockerpillars" src="../dockerpillars.png" /></p>
+<h2 id="speed">Speed<a class="headerlink" href="#speed" title="Permanent link">&para;</a></h2>
+<p>Docker Desktop helps developers maximize their productivity by reducing the time spent on setup and configuration. With Docker, developers can easily package their applications and all their dependencies into containers, allowing for a consistent and reproducible development environment. This eliminates the need for complex manual setups and ensures that everyone on the team can have the same development environment, minimizing the setup overhead.</p>
+<h2 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h2>
+<p>Docker Desktop is designed to provide non-intrusive and actionable security features. It allows developers to identify and address security vulnerabilities during the development process, known as the "inner loop," rather than waiting for later stages like continuous integration (CI) or production. Docker also provides features like container isolation, which enhances security by ensuring that applications run in isolated environments with restricted access to the host system.</p>
+<h2 id="choice">Choice<a class="headerlink" href="#choice" title="Permanent link">&para;</a></h2>
+<p>Docker Desktop empowers developers with the freedom to explore and experiment with various technologies. Docker's containerization approach allows developers to use different tools and technologies for different parts of their applications without conflicts or compatibility issues. Developers are not limited to monolithic and "one-size-fits-all" development environments; instead, they can choose the best tools for their specific use cases.
+Overall, Docker Desktop's features cater to developers' needs for a fast and efficient development process, enhanced security practices, and the flexibility to use diverse technologies based on the requirements of their projects. This combination of speed, security, and choice makes Docker Desktop a popular choice among developers looking to containerize and manage their applications effectively.</p>
 
 
   

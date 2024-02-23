@@ -10,20 +10,20 @@
         <meta name="author" content="GenAI Developers">
       
       
-        <link rel="canonical" href="https://genai-workshop.neo4j.com/lab5/challenges/">
+        <link rel="canonical" href="https://genai-workshop.neo4j.com/lab2/getting-started/">
       
       
-        <link rel="prev" href="../../lab4/best-practices/">
+        <link rel="prev" href="../image-building/">
       
       
-        <link rel="next" href="../getting-started/">
+        <link rel="next" href="../genai-stack/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.15">
     
     
       
-        <title>Current Challenges - GenAI Stack Workshop</title>
+        <title>Getting Started with Docker Init - GenAI Stack Workshop</title>
       
     
     
@@ -74,6 +74,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#clone-the-repository" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Current Challenges
+              Getting Started with Docker Init
             
           </span>
         </div>
@@ -320,14 +325,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
       
       
       
@@ -336,7 +343,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Lab 2 - Using Docker to containerize and deploy GenAI applications
@@ -349,7 +356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/what-is-docker/" class="md-nav__link">
+      <a href="../what-is-docker/" class="md-nav__link">
         What is Docker
       </a>
     </li>
@@ -363,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/inner-loop-developer/" class="md-nav__link">
+      <a href="../inner-loop-developer/" class="md-nav__link">
         Inner-loop Developer Workflow
       </a>
     </li>
@@ -377,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/docker-developer-workflow/" class="md-nav__link">
+      <a href="../docker-developer-workflow/" class="md-nav__link">
         Docker Developer Workflow
       </a>
     </li>
@@ -391,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/image-building/" class="md-nav__link">
+      <a href="../image-building/" class="md-nav__link">
         Docker Image Building and Best Practices
       </a>
     </li>
@@ -403,11 +410,96 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../lab2/getting-started/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting Started with Docker Init
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Getting Started with Docker Init
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clone-the-repository" class="md-nav__link">
+    Clone the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-application" class="md-nav__link">
+    Run the application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-docker-init" class="md-nav__link">
+    Using Docker init
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Docker init">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-the-following-command" class="md-nav__link">
+    Run the following command:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modify-the-dockerfile" class="md-nav__link">
+    Modify the Dockerfile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modify-the-docker-compose-file" class="md-nav__link">
+    Modify the Docker Compose file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-container-service" class="md-nav__link">
+    Running the container service
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -419,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab2/genai-stack/" class="md-nav__link">
+      <a href="../genai-stack/" class="md-nav__link">
         Getting Started with Sample GenAI App
       </a>
     </li>
@@ -635,16 +727,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
       
       
       
@@ -653,7 +743,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Lab 5 - Using Ollama to train and deploy large language models
@@ -664,19 +754,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../lab5/challenges/" class="md-nav__link">
         Current Challenges
       </a>
-      
     </li>
   
 
@@ -688,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../lab5/getting-started/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -702,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ollama/" class="md-nav__link">
+      <a href="../../lab5/ollama/" class="md-nav__link">
         Running Ollama in a Docker container
       </a>
     </li>
@@ -716,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../lab5/getting-started/" class="md-nav__link">
         Best Practices
       </a>
     </li>
@@ -825,6 +907,69 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clone-the-repository" class="md-nav__link">
+    Clone the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-application" class="md-nav__link">
+    Run the application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-docker-init" class="md-nav__link">
+    Using Docker init
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Docker init">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-the-following-command" class="md-nav__link">
+    Run the following command:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modify-the-dockerfile" class="md-nav__link">
+    Modify the Dockerfile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modify-the-docker-compose-file" class="md-nav__link">
+    Modify the Docker Compose file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-container-service" class="md-nav__link">
+    Running the container service
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -841,9 +986,74 @@
   
 
 
-  <h1>Current Challenges</h1>
+  <h1>Getting Started with Docker Init</h1>
+
+<p>Example used to demonstrate <code>docker init</code> CLI for a simple Hello World Python Program</p>
+<h2 id="clone-the-repository">Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code> git clone https://github.com/dockersamples/docker-init-demos
+ cd docker-init-demos/python
+</code></pre></div>
+<h2 id="run-the-application">Run the application<a class="headerlink" href="#run-the-application" title="Permanent link">&para;</a></h2>
+<p>You can simply use <code>python3 app.py</code> command.</p>
+<p>This code defines a handler that responds to GET requests with the specified text and starts an HTTP server listening on port 8080. When you run the script, you can access the server at http://localhost:8080 and see the same message as the Python program.</p>
+<p>Those commands will start a http server listening on port <code>8080</code> 
+and if your request <code>http://localhost:8080</code> you'll see the following output: </p>
+<div class="highlight"><pre><span></span><code>❯<span class="w"> </span>curl<span class="w"> </span>http://localhost:8080
+
+<span class="w">          </span><span class="c1">##         .</span>
+<span class="w">    </span><span class="c1">## ## ##        ==</span>
+<span class="w"> </span><span class="c1">## ## ## ## ##    ===</span>
+/<span class="s2">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;\___/ ===</span>
+<span class="s2">{                       /  ===-</span>
+<span class="s2">\______ O           __/</span>
+<span class="s2"> \    \         __/</span>
+<span class="s2">  \____\_______/</span>
 
 
+<span class="s2">Hello from Docker!</span>
+</code></pre></div>
+<h2 id="using-docker-init">Using Docker init<a class="headerlink" href="#using-docker-init" title="Permanent link">&para;</a></h2>
+<h3 id="run-the-following-command">Run the following command:<a class="headerlink" href="#run-the-following-command" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="w"> </span>docker<span class="w"> </span>init
+</code></pre></div>
+<p>This utility will walk you through creating the following files with sensible defaults for your project:
+  - .dockerignore
+  - Dockerfile
+  - docker-compose.yaml</p>
+<h2 id="modify-the-dockerfile">Modify the Dockerfile<a class="headerlink" href="#modify-the-dockerfile" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>FROM python:3.8-alpine
+RUN mkdir /app
+ADD . /app
+WORKDIR /app
+CMD [&quot;python3&quot;, &quot;app.py&quot;]
+</code></pre></div>
+<h2 id="modify-the-docker-compose-file">Modify the Docker Compose file<a class="headerlink" href="#modify-the-docker-compose-file" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>version: &#39;3&#39;
+
+services:
+  app:
+    build: .
+    ports:
+      - &quot;8080:8080&quot;
+    command: python3 app.py
+</code></pre></div>
+<h2 id="running-the-container-service">Running the container service<a class="headerlink" href="#running-the-container-service" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code> docker compose up -d --build
+</code></pre></div>
+<p>## Accessing the Python app</p>
+<p>```
+curl localhost:8080</p>
+<div class="highlight"><pre><span></span><code>      ##         .
+## ## ##        ==
+</code></pre></div>
+<p>## ## ## ## ##    ===
+/"""""""""""""""""_<strong>/ ===
+{                       /  ===-
+____</strong> O           <strong>/
+              __/
+  __</strong>_______/</p>
+<p>Hello from Docker!
+```</p>
 
 
   

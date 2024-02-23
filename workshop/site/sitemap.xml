@@ -2,147 +2,157 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://genai-workshop.neo4j.com/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab1/best-practices/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab1/challenges/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab1/genai-stack/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab1/getting-started/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab1/overview/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab1/solution/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab2/compose-best-practices/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab2/docker-developer-workflow/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://genai-workshop.neo4j.com/lab2/genai-stack/</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://genai-workshop.neo4j.com/lab2/getting-started/</loc>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab2/image-building/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab2/inner-loop-developer/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab2/microservices/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab2/what-is-docker/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab3/intro/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab3/neo4j-docker-extension/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab3/running-neo4j-in-a-docker/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab4/best-practices/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab4/challenges/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab4/getting-started/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab4/intro/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab4/kgvector/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab4/rag/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab5/challenges/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab5/getting-started/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab5/ollama/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab6/troubleshooting/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab6/upcoming-feature/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/lab6/using-docker-compose/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://genai-workshop.neo4j.com/prereq/prerequisites/</loc>
-         <lastmod>2023-11-07</lastmod>
+         <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
