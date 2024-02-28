@@ -111,7 +111,7 @@ genai-stack-loader-1      |
 
 ![Image9](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i4f9w0emxz783prwxp2k.png)
 
-## Step 8. Accessing the app
+## Step 8. Accessing the StackOverflow Loader app
 
 Visit [http://0.0.0.0:8502](http://0.0.0.0:8502) to access the following:
 
@@ -154,5 +154,4 @@ Open `http://0.0.0.0:8503/` on the browser to access the PDF Bot that allows you
 
 ![Image15](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v8hs4fipvmvxerdp1e6z.png)
 
-In order to test drive, I uploaded my latest resume and asked a quick question.  It responded back with the right answer. Amazing !!
- 
+In order to test the app, one of us (Ajeet) has uploaded his latest resume and asked a quick question. It responded back with the right answer. Amazing !!
