@@ -18,15 +18,14 @@ Follow the instructions to run a complete GenAI Stack using Docker Compose
 
 ## Prereq
 
-- [Install Docker Desktop 4.23.0](https://docs.docker.com/desktop/install/mac-install/)
+- [Install Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 
-## Step 1. Install Ollama on Mac OS
+## Step 1. Install Ollama
 
 
 
-Visit [this link](https://ollama.ai/) to download and install Ollama on Macbook.
-_Please note that currently, Windows is not supported by Ollama, so Windows users need to generate a OpenAI API key and configure the stack to use gpt-3.5 or gpt-4 in the .env file._
+Visit [this link](https://ollama.ai/) to download and install Ollama on your preferred operating system.
 
 ![Image2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vbn2gzk1wridnwo60bve.png)
 
@@ -36,11 +35,11 @@ Choose your preferrable operating system.
 ![Image3](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3ldzwwl9s7cqhhybacfy.png)
 
 
-## Step 2. Create OpenAI Secret API Keys
+## Step 2. Create OpenAI Secret API Keys [optional]
 
 Visit [this link](https://platform.openai.com/account/api-keys) to create your new OpenAI Secret API Keys.
 
-## Step 3. Sign Up for LangChain Beta for API Keys
+## Step 3. Sign Up for LangChain Beta for API Keys [optional if you want to enable Langchain Smith API]
 
 [Visit this link](https://www.langchain.com/langsmith) in order to create Langchain Endpoint and API Keys. You will need the following information
 
@@ -60,9 +59,10 @@ LANGCHAIN_API_KEY=ls__cbabccXXXXXX
 
 
 
-## Step 5. Create .env file
+## Step 5. Create .env file as copy of env.example file
 
 
+Create a copy of `env.example` file and rename it as `.env`. Make sure to update the optional parameters for OpenAI and Langchain if you wish to use them in the project.
 
 ```
 cat .env 
@@ -79,8 +79,6 @@ LANGCHAIN_TRACING_V2=true # false
 LANGCHAIN_PROJECT=default
 LANGCHAIN_API_KEY=ls__cbabccXXXXXX
 ```
-
-Don't forget to change "localhost" to "database" under NEO4J_URI entry.
 
 ## Step 6. Bring up Compose services
 
